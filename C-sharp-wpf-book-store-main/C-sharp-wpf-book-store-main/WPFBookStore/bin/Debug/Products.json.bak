@@ -1,0 +1,114 @@
+{
+  "Products": [
+    {
+      "Id": "101",
+      "Name": "Logitech M221 Wireless Mouse",
+      "Price": "1400",
+      "Quantity": "10",
+      "Color": "Red",
+      "Category": "Electronics",
+      "IsStock": "In Stock",
+      "Image": "39-53.jpg",
+      "Description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur"
+    },
+    {
+      "Id": "101",
+      "Book Name": "Maa",
+      "Author Name": "Anisul Hoque",
+      "Price": "120",
+      "Quantity": "1",
+      "Category": "Novel",
+      "Image": "b3b45a7f-21df-4edd-9cc4-e661e37ca09a.jpg",
+      "Description": "Bangal Novel",
+      "IsStock": "In Stock"
+    },
+    {
+      "Id": "101",
+      "Book Name": "Maa",
+      "Author Name": "Anisul Hoque",
+      "Price": "120",
+      "Quantity": "1",
+      "Category": "Novel",
+      "Image": "b3b45a7f-21df-4edd-9cc4-e661e37ca09a.jpg",
+      "Description": "Bangal Novel",
+      "IsStock": "In Stock"
+    },
+    {
+      "Id": "101",
+      "Book Name": "Maa",
+      "Author Name": "Anisul Hoque",
+      "Price": "120",
+      "Quantity": "1",
+      "Category": "Novel",
+      "Image": "b3b45a7f-21df-4edd-9cc4-e661e37ca09a.jpg",
+      "Description": "Bangal Novel",
+      "IsStock": "In Stock"
+    },
+    {
+      "Id": "101",
+      "Book Name": "Maa",
+      "Author Name": "Anisul Hoque",
+      "Price": "120",
+      "Quantity": "1",
+      "Category": "Novel",
+      "Image": "b3b45a7f-21df-4edd-9cc4-e661e37ca09a.jpg",
+      "Description": "Bangal Novel",
+      "IsStock": "In Stock"
+    },
+    {
+      "Id": "101",
+      "Book Name": "Maa",
+      "Author Name": "Anisul Hoque",
+      "Price": "120",
+      "Quantity": "1",
+      "Category": "Novel",
+      "Image": "b3b45a7f-21df-4edd-9cc4-e661e37ca09a.jpg",
+      "Description": "Bangal Novel",
+      "IsStock": "In Stock"
+    },
+    {
+      "Id": "101",
+      "Book Name": "Maa",
+      "Author Name": "Anisul Hoque",
+      "Price": "120",
+      "Quantity": "1",
+      "Category": "Novel",
+      "Image": "b3b45a7f-21df-4edd-9cc4-e661e37ca09a.jpg",
+      "Description": "Bangal Novel",
+      "IsStock": "In Stock"
+    },
+    {
+      "Id": "101",
+      "Book Name": "Maa",
+      "Author Name": "Anisul Hoque",
+      "Price": "120",
+      "Quantity": "1",
+      "Category": "Novel",
+      "Image": "b3b45a7f-21df-4edd-9cc4-e661e37ca09a.jpg",
+      "Description": "Bangal Novel",
+      "IsStock": "In Stock"
+    },
+    {
+      "Id": "101",
+      "Book Name": "Maa",
+      "Author Name": "Anisul Hoque",
+      "Price": "120",
+      "Quantity": "1",
+      "Category": "Novel",
+      "Image": "b3b45a7f-21df-4edd-9cc4-e661e37ca09a.jpg",
+      "Description": "Bangal Novel",
+      "IsStock": "In Stock"
+    },
+    {
+      "Id": "102",
+      "Book Name": "Bira pratikera khonnje",
+      "Author Name": "Anisul Hoque",
+      "Price": "250",
+      "Quantity": "1",
+      "Category": "Novel",
+      "Image": "896d8701-7941-46d0-8531-9a47eeb66aca.jpg",
+      "Description": "Bīra pratīkera khon̐je, 2001: t.p verso (Anisul Haque) jkt. (deg. from Bāṃlādeśa Prakauśala Biśvabidyālaẏa, Dhaka; journalist from Bangladesh)",
+      "IsStock": "In Stock"
+    }
+  ]
+}
