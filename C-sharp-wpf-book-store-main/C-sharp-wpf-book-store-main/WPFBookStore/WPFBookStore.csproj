@@ -157,10 +157,10 @@
     <Resource Include="Resources\Background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\bg_home.png" />
+    <Resource Include="Pages\bg_home.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pages\bg_home.png" />
+    <Resource Include="Resources\bg_home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

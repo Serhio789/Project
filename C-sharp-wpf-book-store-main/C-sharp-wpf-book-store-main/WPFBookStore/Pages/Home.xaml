@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Home">
 
-    <Border CornerRadius="5">
+    <Border CornerRadius="5" Margin="0,0,0,236">
         <Border.Background>
             <ImageBrush ImageSource="/Pages/bg_home.png" />
         </Border.Background>
