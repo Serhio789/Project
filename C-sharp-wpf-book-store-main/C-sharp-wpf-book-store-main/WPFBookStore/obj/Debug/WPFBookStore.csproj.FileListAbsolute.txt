@@ -192,3 +192,9 @@ C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sha
 C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookS.48037066.Up2Date
 C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore.exe
 C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore.pdb
+C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\Microsoft.Data.Tools.Components.dll
+C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\ru\Microsoft.Data.Tools.Schema.Sql.UnitTesting.resources.dll
+C:\Users\Сергей\Documents\GitHub\Project\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
