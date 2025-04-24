@@ -4,44 +4,33 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WPFBookStore.Pages"
-      mc:Ignorable="d"  
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Dashboard" Loaded="Page_Loaded">
-
-    <Canvas>
-
-        <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}" Height="450" Width="800" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight" AutomationProperties.IsOffscreenBehavior="Default">
-            <TextBlock Text="List Of All Books" FontSize="30" Foreground="{DynamicResource PrimaryTextColor}" FontWeight="Bold"
-                VerticalAlignment="Top" HorizontalAlignment="Left" Margin="271,26,0,0"/>
-        </Border>
-        <ListView Name="lvProduct" Height="350" Width="790" Canvas.Top="82" Background="#FF080529" IsSynchronizedWithCurrentItem="True" Foreground="#FFF9F9F9" Canvas.Left="4">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Book ID" Width="90" DisplayMemberBinding="{Binding Id}"/>
-                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding BookName}"/>
-                    <GridViewColumn Header="Author" Width="120" DisplayMemberBinding="{Binding AuthorName}"/>
-                    <GridViewColumn Header="Category" Width="90" DisplayMemberBinding="{Binding Category}"/>
-                    <GridViewColumn Header="Stock" Width="100" DisplayMemberBinding="{Binding IsStock}"/>
-                    <GridViewColumn Header="View" Width="110">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <Button  Content="View" Margin="0" Padding="5 0 5 0" FontSize="14" Height="24" Name="btnView" Click="btnView_Click" CommandParameter="{Binding}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn Header="Delete" Width="110">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <Button  Content="Delete" Margin="0" Padding="5 0 5 0" FontSize="14" Height="24" Name="btndelete" Click="btndelete_Click"  CommandParameter="{Binding}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                </GridView>
-            </ListView.View>
-        </ListView>
+      mc:Ignorable="d" Width="1000" Height="650"
+      Title="Чтение книг" Loaded="Page_Loaded">
 
 
-    </Canvas>
+    <Border CornerRadius="0,0,0,25" Background="{DynamicResource SecundaryBackgroundColor}" Height="650" Width="1000">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="1"
+                    Background="#ff945b"
+                    CornerRadius="25 0 0 8" Width="1000" Margin="0,90,0,0">
+                <TextBlock x:Name="TextFromBook" HorizontalAlignment="Center" Height="360" Margin="60,60,60,0" TextWrapping="Wrap" Text="Текст Книги" VerticalAlignment="Top" Width="850"/>
+            </Border>
+            <TextBlock Grid.ColumnSpan="2" Text="BOBAREADER" FontSize="32" Foreground="{DynamicResource PrimaryTextColor}" FontWeight="Bold" 
+                VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40,20,0,0" FontFamily ="Inter"/>
+            <Label x:Name="NameBook" Grid.ColumnSpan="2" Content="Название книги" FontSize="32" Foreground="{DynamicResource PrimaryTextColor}" FontWeight="Bold" 
+                VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,90,0,0" FontFamily ="Inter"/>
+            <Label x:Name="NumberPageFromBook" Grid.ColumnSpan="2" Content="Номер страницы" HorizontalAlignment="Right" Height="30" Margin="0,550,90,0" VerticalAlignment="Top" Width="105"/>
+
+
+        </Grid>
+    </Border>
+
+
+
 
 
 </Page>

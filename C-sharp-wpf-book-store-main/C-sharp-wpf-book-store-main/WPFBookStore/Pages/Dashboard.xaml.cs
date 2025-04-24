@@ -24,6 +24,9 @@ namespace WPFBookStore.Pages
         public Dashboard()
         {
             InitializeComponent();
+            //ChangeLabelContent(); //Запуск для отображения названия книжки
+            //Show_Number_Page();     //Запуск для отображения страниц
+            //Show_Text_From_Book();  //Запуск для отображения текста книжки
         }
 
         public static int id;
@@ -35,7 +38,7 @@ namespace WPFBookStore.Pages
         public static string image = "";
         public static string description = "";
 
-
+        //Оставил много калла, это всё не используется заисключением GetItemList, для жизни Page_Loaded, можно как-то меня GetItemList.
 
         private void GetItemList()
         {
@@ -64,51 +67,33 @@ namespace WPFBookStore.Pages
                         
                         });
                     }
-                   
-                   lvProduct.ItemsSource = abook;
+
                 }
-            }
-        }
-
-
-
-        private void btnView_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btndelete_Click(object sender, RoutedEventArgs e)
-        {
-            var itemsJson = File.ReadAllText(@"Products.json");
-            try
-            {
-                var jobject = JObject.Parse(itemsJson);
-                JArray bookArr = (JArray)jobject["Products"];
-                Button button = sender as Button;
-                Models.Addbook addbookId = button.CommandParameter as Models.Addbook;
-                int bid = addbookId.Id;
-                var bookToDelete = bookArr.FirstOrDefault(obj => obj["Id"].Value<int>() == bid);
-
-                MessageBox.Show("Are you Sure to delet the Products");
-                bookArr.Remove(bookToDelete);
-
-                string output = Newtonsoft.Json.JsonConvert.SerializeObject(jobject, Newtonsoft.Json.Formatting.Indented);
-                File.WriteAllText(@"Products.json", output);
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                MessageBox.Show("Data Deleted Successfully--!");
             }
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             GetItemList();
+        }
+
+
+        //Название книги
+        private void ChangeLabelContent() 
+        {
+            NameBook.Content = "Джордан";
+        }
+
+        //Страницы
+        private void Show_Number_Page() 
+        {
+            NumberPageFromBook.Content = "HELP";
+        }
+
+        //Текст книги
+        private void Show_Text_From_Book() 
+        {
+            TextFromBook.Text = "HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP";
         }
     }
 }

@@ -5,12 +5,17 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WPFBookStore.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Home">
+      Height="650" Width="1000"
+      Title="Личный кабинет">
 
-    <Border CornerRadius="5">
-        <Border.Background>
-            <ImageBrush ImageSource="/Pages/bg_home.png" />
-        </Border.Background>
-    </Border>
+    <Grid>
+        <ScrollViewer x:Name="MyScrollViewer" VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+            <StackPanel>
+                <Label Content="Мои книги" HorizontalAlignment="Center" Height="30" Margin="0,170,0,0" VerticalAlignment="Top" Width="70"/>
+                <!-- Здесь много элементов для прокрутки -->
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
 </Page>

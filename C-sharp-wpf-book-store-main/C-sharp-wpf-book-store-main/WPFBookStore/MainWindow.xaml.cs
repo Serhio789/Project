@@ -39,7 +39,7 @@ namespace WPFBookStore
                 Popup.PlacementTarget = btnHome;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Home";
+                Header.PopupText.Text = "Личный Кабинет";
             }
         }
 
@@ -56,7 +56,7 @@ namespace WPFBookStore
                 Popup.PlacementTarget = btnDashboard;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "View All Books";
+                Header.PopupText.Text = "Чтение книг";
             }
         }
 
@@ -66,32 +66,32 @@ namespace WPFBookStore
             Popup.IsOpen = false;
         }
 
-        private void btnProducts_MouseEnter(object sender, MouseEventArgs e)
+        private void btnProfileU_MouseEnter(object sender, MouseEventArgs e)
         {
             if (Tg_Btn.IsChecked == false)
             {
-                Popup.PlacementTarget = btnProducts;
+                Popup.PlacementTarget = btnProfileU;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Add New Books";
+                Header.PopupText.Text = "Каталог";
             }
         }
 
-        private void btnProducts_MouseLeave(object sender, MouseEventArgs e)
+        private void btnProfileU_MouseLeave(object sender, MouseEventArgs e)
         {
             Popup.Visibility = Visibility.Collapsed;
             Popup.IsOpen = false;
         }
 
-     
 
-        private void btnProductStock_MouseLeave(object sender, MouseEventArgs e)
+
+        private void btnProfileUStock_MouseLeave(object sender, MouseEventArgs e)
         {
             Popup.Visibility = Visibility.Collapsed;
             Popup.IsOpen = false;
         }
 
-       
+
 
         private void btnOrderList_MouseLeave(object sender, MouseEventArgs e)
         {
@@ -155,12 +155,22 @@ namespace WPFBookStore
 
         private void MenuItem_Loaded(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
-        private void btnProducts_Click(object sender, RoutedEventArgs e)
+        private void fContainer_Navigated(object sender, NavigationEventArgs e)
         {
-            fContainer.Navigate(new System.Uri("Pages/Products.xaml", UriKind.RelativeOrAbsolute));
+
+        }
+
+        private void btnProfileU_Click(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("Pages/ProfileU.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

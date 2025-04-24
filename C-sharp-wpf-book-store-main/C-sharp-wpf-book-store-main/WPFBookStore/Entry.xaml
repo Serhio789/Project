@@ -1,0 +1,84 @@
+﻿<Window x:Class="WPFBookStore.Entry"
+      xmlns:ctls ="clr-namespace:WPFBookStore.Controls"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFBookStore"
+      mc:Ignorable="d" Name ="Start_"
+      Height="450" Width="800" 
+      Title="Entry"
+        WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Background="Transparent" AllowsTransparency="True"
+        ResizeMode="NoResize" FontFamily="Poppins">
+
+        <Border Background="{DynamicResource PrimaryBackgroundColor}" CornerRadius="25">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Заголовок -->
+                    <RowDefinition Height="*"/>
+                    <!-- Основное содержимое -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Кнопки -->
+                </Grid.RowDefinitions>
+                
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                    Background="{DynamicResource SecundaryBackgroundColor}"
+                    CornerRadius="0 0 0 25" VerticalAlignment="TOP">
+
+                    <Viewbox Stretch="Uniform" Margin="145,10,145,10">
+                        <Image Source="Resources/BOBAREADER.png"/>
+                    </Viewbox>
+                </Border>
+
+                <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,20" HorizontalAlignment="Center">
+                        <Label Content="Логин" Width="70" VerticalAlignment="Center"/>
+                        <TextBox Width="200" Height="27" Text="Введите логин" Margin="10,0,0,0"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="Пароль" Width="70" VerticalAlignment="Center"/>
+                        <TextBox Width="200" Height="27" Text="Введите пароль" Margin="10,0,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+
+
+                <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
+                    <Button Content="Выход" Width="150" Height="40" Margin="0,0,200,0" 
+                        Background="{DynamicResource SecundaryBackgroundColor}" 
+                        Foreground="{DynamicResource PrimaryBackgroundColor}" Click="Exit_Click"/>
+                    <Button Content="Вход" Width="150" Height="40"
+                        Background="{DynamicResource SecundaryBackgroundColor}" 
+                        Foreground="{DynamicResource PrimaryBackgroundColor}" Click="OpenMainWindow_Click"/>
+                </StackPanel>
+
+            <Grid Margin="0,0,0,0">
+
+                <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft" Grid.RowSpan="2">
+                        <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton" BorderBrush="White" Foreground="Black" Width="25"/>
+                        <Button x:Name="btnRestore" Margin="5,0" Click="btnRestore_Click">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource IconButtonsStyle}">
+                                    <Setter Property="Content" Value="{DynamicResource maximize}"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding ElementName=home, Path=WindowState}" Value="Maximized">
+                                            <Setter Property="Content" Value="{DynamicResource restore}"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <Button x:Name="btnMinimize" Style="{DynamicResource IconButtonsStyle}" Content="{DynamicResource minimize}" Click="btnMinimize_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+    </Border>
+</Window>

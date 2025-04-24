@@ -16,21 +16,13 @@ using System.Windows.Shapes;
 namespace WPFBookStore.Pages
 {
     /// <summary>
-    ///Home.xaml
+    /// Логика взаимодействия для ProfileU.xaml
     /// </summary>
-    public partial class Home : Page
+    public partial class ProfileU : Page
     {
-        public Home()
+        public ProfileU()
         {
             InitializeComponent();
-        }
-
-        private void MySlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            if (MyScrollViewer != null)
-            {
-                MyScrollViewer.ScrollToVerticalOffset(e.NewValue);
-            }
         }
     }
 }
