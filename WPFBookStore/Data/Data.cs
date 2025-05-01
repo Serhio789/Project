@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
+using System.Threading;
+using WPFBookStore.Data.SapClass;
 
 namespace WPFBookStore.Data
 {
@@ -20,12 +22,16 @@ namespace WPFBookStore.Data
             _logger.LogInformation("BookService initialized");
         }
 
-        public async Task<List<Book>> GetBooksAsync(
+        public async Task<List<Book>> GetListBooksAsync(
             string title = null,
             int? genre = null,
             int? year = null,
-            string author = null)
+            string author = null,
+            CancellationToken cancellationToken = default)
         {
+            // Проверяем токен отмены перед началом операции
+            cancellationToken.ThrowIfCancellationRequested();
+
             _logger.LogInformation("Starting GetBooksAsync with parameters: Title={Title}, Genre={Genre}, Year={Year}, Author={Author}",
                 title, genre, year, author);
 
@@ -53,12 +59,12 @@ namespace WPFBookStore.Data
 
                 // Отправляем запрос и получаем ответ
                 _logger.LogInformation("Sending HTTP GET request to {RequestUrl}", requestUrl);
-                var response = await _httpClient.GetAsync(requestUrl);
+                var response = await _httpClient.GetAsync(requestUrl, cancellationToken);
 
                 _logger.LogDebug("Received response with status code {StatusCode}", response.StatusCode);
                 response.EnsureSuccessStatusCode();
 
-                // Читаем содержимое ответа
+                // Читаем содержимое ответа с учетом токена отмены
                 var jsonResponse = await response.Content.ReadAsStringAsync();
                 _logger.LogDebug("Received JSON response: {JsonResponse}", jsonResponse);
 
@@ -76,6 +82,40 @@ namespace WPFBookStore.Data
             catch (JsonException ex)
             {
                 _logger.LogError(ex, "JSON deserialization failed while processing books response");
+                throw;
+            }
+            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+            {
+                _logger.LogWarning("Book search operation was canceled by user request");
+                throw;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Unexpected error occurred in GetBooksAsync");
+                throw;
+            }
+        }
+        public async Task<List<TextBook>> GeBookAsync(
+            string requestUrl, 
+            CancellationToken cancellationToken)
+        {
+            try
+            {
+
+            }
+            catch (HttpRequestException ex)
+            {
+                _logger.LogError(ex, "HTTP request failed while getting books");
+                throw;
+            }
+            catch (JsonException ex)
+            {
+                _logger.LogError(ex, "JSON deserialization failed while processing books response");
+                throw;
+            }
+            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+            {
+                _logger.LogWarning("Book search operation was canceled by user request");
                 throw;
             }
             catch (Exception ex)

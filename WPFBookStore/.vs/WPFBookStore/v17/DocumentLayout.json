@@ -1,70 +1,168 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\",
+  "WorkspaceRootPath": "C:\\Project\\WPFBookStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\users\\\u0441\u0435\u0440\u0433\u0435\u0439\\documents\\github\\project\\c-sharp-wpf-book-store-main\\c-sharp-wpf-book-store-main\\wpfbookstore\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Project\\WPFBookStore\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\project\\wpfbookstore\\data\\classgenres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\classgenres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\project\\wpfbookstore\\data\\classpublishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\classpublishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\project\\wpfbookstore\\data\\classautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\classautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\project\\wpfbookstore\\data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Project\\WPFBookStore\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Project\\WPFBookStore\\tests\\testsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:tests\\testsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Project\\WPFBookStore\\data\\textbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\textbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Project\\WPFBookStore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Project\\WPFBookStore\\Data\\Book.cs",
+              "RelativeDocumentMoniker": "Data\\Book.cs",
+              "ToolTip": "C:\\Project\\WPFBookStore\\Data\\Book.cs",
+              "RelativeToolTip": "Data\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T18:24:43.119Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\Data\\Book.cs",
-              "RelativeDocumentMoniker": "Data\\Book.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\Data\\Book.cs",
-              "RelativeToolTip": "Data\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T18:24:43.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Data.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\Data\\Data.cs",
-              "RelativeDocumentMoniker": "Data\\Data.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\Data\\Data.cs",
-              "RelativeToolTip": "Data\\Data.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowD8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T18:23:58.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ClassPublishers.cs",
+              "DocumentMoniker": "C:\\Project\\WPFBookStore\\Data\\ClassPublishers.cs",
+              "RelativeDocumentMoniker": "Data\\ClassPublishers.cs",
+              "ToolTip": "C:\\Project\\WPFBookStore\\Data\\ClassPublishers.cs",
+              "RelativeToolTip": "Data\\ClassPublishers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T18:01:02.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClassGenres.cs",
+              "DocumentMoniker": "C:\\Project\\WPFBookStore\\Data\\ClassGenres.cs",
+              "RelativeDocumentMoniker": "Data\\ClassGenres.cs",
+              "ToolTip": "C:\\Project\\WPFBookStore\\Data\\ClassGenres.cs",
+              "RelativeToolTip": "Data\\ClassGenres.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T17:58:44.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClassAutor.cs",
+              "DocumentMoniker": "C:\\Project\\WPFBookStore\\Data\\ClassAutor.cs",
+              "RelativeDocumentMoniker": "Data\\ClassAutor.cs",
+              "ToolTip": "C:\\Project\\WPFBookStore\\Data\\ClassAutor.cs",
+              "RelativeToolTip": "Data\\ClassAutor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T17:52:38.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Project\\WPFBookStore\\Data\\ApiClient.cs",
+              "RelativeDocumentMoniker": "Data\\ApiClient.cs",
+              "ToolTip": "C:\\Project\\WPFBookStore\\Data\\ApiClient.cs",
+              "RelativeToolTip": "Data\\ApiClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T12:32:52.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TextBook.cs",
+              "DocumentMoniker": "C:\\Project\\WPFBookStore\\Data\\TextBook.cs",
+              "RelativeDocumentMoniker": "Data\\TextBook.cs",
+              "ToolTip": "C:\\Project\\WPFBookStore\\Data\\TextBook.cs",
+              "RelativeToolTip": "Data\\TextBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T14:01:16.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TestsData.cs",
+              "DocumentMoniker": "C:\\Project\\WPFBookStore\\Tests\\TestsData.cs",
+              "RelativeDocumentMoniker": "Tests\\TestsData.cs",
+              "ToolTip": "C:\\Project\\WPFBookStore\\Tests\\TestsData.cs",
+              "RelativeToolTip": "Tests\\TestsData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T07:56:44.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Data.cs",
+              "DocumentMoniker": "C:\\Project\\WPFBookStore\\Data\\Data.cs",
+              "RelativeDocumentMoniker": "Data\\Data.cs",
+              "ToolTip": "C:\\Project\\WPFBookStore\\Data\\Data.cs",
+              "RelativeToolTip": "Data\\Data.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T18:23:58.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Project\\WPFBookStore\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\MainWindow.xaml",
+              "ToolTip": "C:\\Project\\WPFBookStore\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-16T14:06:54.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T14:06:54.537Z"
             }
           ]
         }
