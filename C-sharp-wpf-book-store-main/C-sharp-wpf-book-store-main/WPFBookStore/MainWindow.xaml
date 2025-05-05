@@ -11,124 +11,126 @@
         Background="Transparent" AllowsTransparency="True"
         ResizeMode="NoResize" FontFamily="Inter">
 
-
     <Border Background="{DynamicResource PrimaryBackgroundColor}"
-            CornerRadius="25">
+            CornerRadius="0">
         <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-                <Border Grid.Column="0"
+            <Border Grid.Column="0"
                     Background="{DynamicResource SecundaryBackgroundColor}"
-                    CornerRadius="25 0 0 8">
-                    <Grid x:Name="GridNav" Width="60">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="60"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-
-                        <Grid Grid.Row="0">
-                            <Border 
+                    CornerRadius="0 0 0 8">
+                <Grid x:Name="GridNav" Width="60">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Border 
                               Margin="14 0 0 0"
                               Width="32" Height="24"
                               HorizontalAlignment="Left">
-                                <Border.Background>
-                                    <ImageBrush ImageSource="Resources/BooKLogo.png" Stretch="Uniform"/>
-                                </Border.Background>
-                            </Border>
+                            <Border.Background>
+                                <ImageBrush ImageSource="Resources/BooKLogo.png" Stretch="Uniform"/>
+                            </Border.Background>
+                        </Border>
 
-                            <Label Content="BOBAREADER"
+                        <Label Content="BOBAREADER"
                                Foreground="{DynamicResource PrimaryTextColor}"
                                FontWeight="Bold"
                                FontSize="16"
                                VerticalAlignment="Center"
                                HorizontalAlignment="Left"
                                Margin="60 0 0 0" FontFamily ="Inter"/>
-                        </Grid>
-
-                        <!-- Start: MenuItem -->
-                        <StackPanel Grid.Row="1" Margin="-1 40 0 20">
-                            <Button x:Name="btnHome" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnHome_MouseEnter" MouseLeave="btnHome_MouseLeave" Click="btnHome_Click">
-                                <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource home}" IconWidth="16" Text="Главная" VerticalAlignment="Center" FontFamily ="Inter"/>
-                            </Button>
-                            <Button x:Name="btnDashboard" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnDashboard_MouseEnter" MouseLeave="btnDashboard_MouseLeave" Click="btnDashboard_Click">
-                                <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Каталог" VerticalAlignment="Center" FontFamily ="Inter"/>
-                            </Button>
-                            <Button x:Name="btnProfileU" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnProfileU_MouseEnter" MouseLeave="btnProfileU_MouseLeave" Click="btnProfileU_Click">
-                                <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Профиль" VerticalAlignment="Center" FontFamily ="Inter"/>
-                            </Button>
-                        </StackPanel>
-                        <!-- End: MenuItem -->
-
-                        <!-- Start: Popup User Control -->
-                        <Popup x:Name="Popup"  AllowsTransparency="True"  HorizontalOffset="0" VerticalOffset="10">
-                            <ctls:UserPopup x:Name="Header" Foreground="{DynamicResource PrimaryTextColor}"/>
-                        </Popup>
-                        <!-- End: Popup User Control -->
-
                     </Grid>
-                </Border>
-
-                <Grid Grid.Column="1" Margin="0,0,0.2,0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="0"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
                     
 
-                    <ToggleButton x:Name="Tg_Btn" Grid.Column="1" VerticalAlignment="Center" Style="{DynamicResource iToggleButtonStyle}" HorizontalAlignment="Left" BorderThickness="0" Background="Transparent" Margin="10,15,0,15" Height="30" Width="30">
-                        <ToggleButton.Triggers>
-                            <EventTrigger RoutedEvent="ToggleButton.Unchecked">
-                                <BeginStoryboard>
-                                    <Storyboard x:Name="HideStackPanel">
-                                        <DoubleAnimation Storyboard.TargetName="GridNav" Storyboard.TargetProperty="Width" BeginTime="0:0:0" From="210" To="60" Duration="0:0:0.5">
-                                        </DoubleAnimation>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger>
-                            <EventTrigger RoutedEvent="ToggleButton.Checked">
-                                <BeginStoryboard>
-                                    <Storyboard x:Name="ShowStackPanel">
-                                        <DoubleAnimation Storyboard.TargetName="GridNav" Storyboard.TargetProperty="Width" BeginTime="0:0:0" From="60" To="210" Duration="0:0:0.5">
-                                        </DoubleAnimation>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger>
-                        </ToggleButton.Triggers>
-                    </ToggleButton>
-
-                    <!-- Start: Button Close | Restore | Minimize -->
-                    <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft" Grid.RowSpan="2">
-                        <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton" BorderBrush="White" Foreground="Black" Width="25"/>
-                        <Button x:Name="btnRestore" Margin="5,0" Click="btnRestore_Click">
-                            <Button.Style>
-                                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource IconButtonsStyle}">
-                                    <Setter Property="Content" Value="{DynamicResource maximize}"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding ElementName=home, Path=WindowState}" Value="Maximized">
-                                            <Setter Property="Content" Value="{DynamicResource restore}"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
+                        <!-- Start: MenuItem -->
+                    <StackPanel Grid.Row="1" Margin="-1 40 0 20">
+                        <Button x:Name="btnHome" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnHome_MouseEnter" MouseLeave="btnHome_MouseLeave" Click="btnHome_Click">
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource home}" IconWidth="16" Text="Главная" VerticalAlignment="Center" FontFamily ="Inter"/>
                         </Button>
-                        <Button x:Name="btnMinimize" Style="{DynamicResource IconButtonsStyle}" Content="{DynamicResource minimize}" Click="btnMinimize_Click"/>
+                        <Button x:Name="btnDashboard" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnDashboard_MouseEnter" MouseLeave="btnDashboard_MouseLeave" Click="btnDashboard_Click">
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Каталог" VerticalAlignment="Center" FontFamily ="Inter"/>
+                        </Button>
+                        <Button x:Name="btnProfileU" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnProfileU_MouseEnter" MouseLeave="btnProfileU_MouseLeave" Click="btnProfileU_Click">
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Профиль" VerticalAlignment="Center" FontFamily ="Inter"/>
+                        </Button>
                     </StackPanel>
-                    <!-- End: Button Close | Restore | Minimize -->
+                    <!-- End: MenuItem -->
 
-                    <Frame Grid.Row="1"
-                       Name="fContainer"
-                       Margin="0"
-                       NavigationUIVisibility="Hidden" Navigated="fContainer_Navigated">
-
-                    </Frame>
-                <Button Content="Выход" HorizontalAlignment="Center" Height="40" Margin="20,580,710.2,0" VerticalAlignment="Top" Width="150" Click="Exit_Click" Grid.Row="1" FontFamily ="Inter" Background="{DynamicResource SecundaryBackgroundColor}" Foreground="{DynamicResource PrimaryBackgroundColor}"/>
-                     
+                    <!-- Start: Popup User Control -->
+                    <Popup x:Name="Popup"  AllowsTransparency="True"  HorizontalOffset="0" VerticalOffset="10">
+                        <ctls:UserPopup x:Name="Header" Foreground="{DynamicResource PrimaryTextColor}"/>
+                    </Popup>
+                    <!-- End: Popup User Control -->
                 </Grid>
+            </Border>
+            <Border Background="{DynamicResource SecundaryBackgroundColor}" Grid.Column="1" Margin="0,0,0,560"/>
 
+
+            <Grid Grid.Column="1" Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <ToggleButton x:Name="Tg_Btn" Grid.Column="1" VerticalAlignment="Center" Style="{DynamicResource iToggleButtonStyle}" HorizontalAlignment="Left" BorderThickness="0" Background="Transparent" Margin="10,15,0,15" Height="30" Width="30">
+                    <ToggleButton.Triggers>
+                        <EventTrigger RoutedEvent="ToggleButton.Unchecked">
+                            <BeginStoryboard>
+                                <Storyboard x:Name="HideStackPanel">
+                                    <DoubleAnimation Storyboard.TargetName="GridNav" Storyboard.TargetProperty="Width" BeginTime="0:0:0" From="210" To="60" Duration="0:0:0.5">
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="ToggleButton.Checked">
+                            <BeginStoryboard>
+                                <Storyboard x:Name="ShowStackPanel">
+                                    <DoubleAnimation Storyboard.TargetName="GridNav" Storyboard.TargetProperty="Width" BeginTime="0:0:0" From="60" To="210" Duration="0:0:0.5">
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ToggleButton.Triggers>
+                </ToggleButton>
+
+                <!-- Start: Button Close | Restore | Minimize -->
+                <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft" Grid.RowSpan="2">
+                    <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton" BorderBrush="White" Foreground="Black" Width="25"/>
+                    <Button x:Name="btnRestore" Margin="5,0" Click="btnRestore_Click">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}" BasedOn="{StaticResource IconButtonsStyle}">
+                                <Setter Property="Content" Value="{DynamicResource maximize}"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ElementName=home, Path=WindowState}" Value="Maximized">
+                                        <Setter Property="Content" Value="{DynamicResource restore}"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button x:Name="btnMinimize" Style="{DynamicResource IconButtonsStyle}" Content="{DynamicResource minimize}" Click="btnMinimize_Click"/>
+                </StackPanel>
+                <!-- End: Button Close | Restore | Minimize -->
+
+                <Frame Grid.Row="1"
+                       Name="fContainer" 
+                       VerticalAlignment="Top"
+                       Margin="0,90,5,0"
+                       NavigationUIVisibility="Hidden" Navigated="fContainer_Navigated">
+                </Frame>
+                <Button Content="Выход" 
+                        HorizontalAlignment="Center" 
+                        Height="40" Margin="20,580,710.2,0" 
+                        VerticalAlignment="Top" Width="150" Click="Exit_Click" 
+                        Grid.Row="1" FontFamily ="Inter" 
+                        Background="{DynamicResource SecundaryBackgroundColor}" 
+                        Foreground="{DynamicResource PrimaryBackgroundColor}"/>
             </Grid>
-        </Border>
-
+        </Grid>
+    </Border>
 </Window>
