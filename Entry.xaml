@@ -39,27 +39,29 @@
             <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,0,0,0">
                     <Border CornerRadius="10" BorderThickness="1" Background="White" Margin="0,0,0,10">
-                        <TextBox Width="250" Height="30" Text="Логин" Margin="2" 
-                     FontFamily="Inter" Background="Transparent" 
-                     BorderThickness="0" Padding="6"/>
+                        <TextBox x:Name="txtUsername" Width="250" Height="30" Text="Логин" Margin="2" 
+                        FontFamily="Inter" Background="Transparent" 
+                        BorderThickness="0" Padding="6"/>
                     </Border>
 
                     <Border CornerRadius="10" BorderThickness="1" Background="White">
-                        <TextBox Width="250" Height="30" Text="Пароль" Margin="2" 
-                     FontFamily="Inter" Background="Transparent" 
-                     BorderThickness="0" Padding="6"/>
+                        <TextBox x:Name="txtPassword" Width="250" Height="30" Text="Пароль" Margin="2" 
+                        FontFamily="Inter" Background="Transparent" 
+                        BorderThickness="0" Padding="6"/>
                     </Border>
                 </StackPanel>
             </StackPanel>
 
             <!-- Кнопки входа и выхода -->
             <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
-                <Button Content="Выход" Width="160" Height="45" Margin="0,0,20,0" FontFamily="Inter" 
+                <Button x:Name="btnExit" Content="Выход" Width="160" Height="45" Margin="0,0,20,0" FontFamily="Inter" 
                         Background="{DynamicResource SecundaryBackgroundColor}" 
                         Foreground="{DynamicResource PrimaryBackgroundColor}" BorderBrush="#aaa" BorderThickness="1" Padding="10,5" Click="Exit_Click"/>
-                <Button Content="Вход" Width="160" Height="45" FontFamily="Inter" 
+                <Button Content="Вход"
+                        x:Name="btnLogin"
+                        Width="160" Height="45" FontFamily="Inter" 
                         Background="{DynamicResource SecundaryBackgroundColor}" 
-                        Foreground="{DynamicResource PrimaryBackgroundColor}" BorderBrush="#aaa" BorderThickness="1" Padding="10,5" Click="OpenMainWindow_Click"/>
+                        Foreground="{DynamicResource PrimaryBackgroundColor}" BorderBrush="#aaa" BorderThickness="1" Padding="10,5" Click="LoginButton_Click"/>
             </StackPanel>
 
             <!-- Кнопки управления окном (Минимизировать, Восстановить, Закрыть) -->

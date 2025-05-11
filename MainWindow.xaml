@@ -13,7 +13,7 @@
 
     <Border Background="{DynamicResource PrimaryBackgroundColor}"
             CornerRadius="0">
-        <Grid>
+        <Grid x:Name="mainContent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
@@ -123,7 +123,7 @@
                        Margin="0,90,5,0"
                        NavigationUIVisibility="Hidden" Navigated="fContainer_Navigated">
                 </Frame>
-                <Button Content="Выход" 
+                <Button x:Name="btnExit" Content="Выход" 
                         HorizontalAlignment="Center" 
                         Height="40" Margin="20,580,710.2,0" 
                         VerticalAlignment="Top" Width="150" Click="Exit_Click" 
