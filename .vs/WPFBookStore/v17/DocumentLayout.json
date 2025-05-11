@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:entry.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\users\\\u0441\u0435\u0440\u0433\u0435\u0439\\documents\\github\\project\\entry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\entry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:entry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\users\\\u0441\u0435\u0440\u0433\u0435\u0439\\documents\\github\\project\\pages\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -110,7 +110,7 @@
               "RelativeDocumentMoniker": "Entry.xaml.cs",
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml.cs",
               "RelativeToolTip": "Entry.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAswBMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T11:55:32.505Z",
               "EditorCaption": ""
@@ -124,8 +124,7 @@
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml",
               "RelativeToolTip": "Entry.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-11T11:54:06.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T11:54:06.068Z"
             },
             {
               "$type": "Document",
@@ -160,8 +159,7 @@
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Styles\\MainStyle.xaml",
               "RelativeToolTip": "Styles\\MainStyle.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:42:53.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T17:42:53.863Z"
             },
             {
               "$type": "Document",
@@ -220,8 +218,7 @@
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Controls\\MenuItem.xaml",
               "RelativeToolTip": "Controls\\MenuItem.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:40:32.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T17:40:32.25Z"
             },
             {
               "$type": "Document",
@@ -232,8 +229,7 @@
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Themes\\DarkTheme.xaml",
               "RelativeToolTip": "Themes\\DarkTheme.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:40:21.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T17:40:21.587Z"
             },
             {
               "$type": "Document",
@@ -244,8 +240,7 @@
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:37:28.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T17:37:28.439Z"
             },
             {
               "$type": "Document",
@@ -268,8 +263,7 @@
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Assets\\Icons.xaml",
               "RelativeToolTip": "Assets\\Icons.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:36:30.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T17:36:30.276Z"
             },
             {
               "$type": "Document",
@@ -281,8 +275,7 @@
               "RelativeToolTip": "Pages\\Dashboard.xaml.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAAwCwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T17:36:30.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T17:36:30.275Z"
             },
             {
               "$type": "Document",
@@ -294,8 +287,7 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAFMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T17:37:36.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T17:37:36.508Z"
             },
             {
               "$type": "Document",
@@ -306,8 +298,7 @@
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:36:30.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T17:36:30.043Z"
             },
             {
               "$type": "Document",
