@@ -204,7 +204,6 @@ C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Entry.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\MainWindow.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Dashboard.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Home.g.cs
-C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\ProfileU.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\App.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookStore_MarkupCompile.cache
@@ -251,9 +250,12 @@ C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Entry.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\MainWindow.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Dashboard.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Home.baml
-C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\ProfileU.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookStore.g.resources
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookStore.Properties.Resources.resources
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookStore.csproj.GenerateResource.cache
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookStore.csproj.CoreCompileInputs.cache
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookS.48037066.Up2Date
+C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\BookCatalog.g.cs
+C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Views\BookItem.g.cs
+C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\BookCatalog.baml
+C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Views\BookItem.baml

@@ -17,6 +17,8 @@ namespace WPFBookStore
         {
             InitializeComponent();
             InitializeEventHandlers();
+            if (_apiClient.GetAuthToken() != "")
+                OpenMainWindow();
             CheckAutoLogin();
         }
 
@@ -83,20 +85,21 @@ namespace WPFBookStore
 
         private async void CheckAutoLogin()
         {
-            if (!string.IsNullOrEmpty(_apiClient.GetAuthToken()))
+            if (_apiClient.GetAuthToken() != "")
             {
+                Console.WriteLine(_apiClient.GetAuthToken());
                 try
                 {
-                    SetLoadingState(true);
-                    string accountData = await _apiClient.GetAccountDataAsync();
-                    if (!string.IsNullOrEmpty(accountData))
-                    {
-                        OpenMainWindow();
-                    }
+                        SetLoadingState(true);
+                        string accountData = await _apiClient.GetAccountDataAsync();
+                        if (!string.IsNullOrEmpty(accountData))
+                        {
+                            OpenMainWindow();
+                        }
                 }
                 catch
                 {
-                    // Автоматический вход не удался
+
                 }
                 finally
                 {

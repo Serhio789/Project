@@ -126,7 +126,7 @@ namespace WPFBookStore
 
         private void btnProfileU_Click(object sender, RoutedEventArgs e)
         {
-            NavigateToPage("Pages/ProfileU.xaml");
+            NavigateToPage("Pages/BookCatalog.xaml");
         }
         #endregion
 

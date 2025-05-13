@@ -3,7 +3,9 @@ using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Threading.Tasks;
+using System.Windows.Shapes;
 using Newtonsoft.Json;
 
 public class ApiClient : IDisposable
@@ -20,7 +22,7 @@ public class ApiClient : IDisposable
         _httpClient.DefaultRequestHeaders.Accept.Add(
             new MediaTypeWithQualityHeaderValue("application/json"));
 
-        LoadToken(); // Загружаем сохранённый токен при инициализации
+        LoadToken();
     }
 
     #region Токен авторизации
@@ -32,6 +34,11 @@ public class ApiClient : IDisposable
             {
                 _authToken = File.ReadAllText(TokenFile);
                 UpdateAuthorizationHeader();
+            }
+            else
+            {
+                File.Create(TokenFile);
+                FileInfo fileInfo = new FileInfo(TokenFile);
             }
         }
         catch (Exception ex)
@@ -57,8 +64,8 @@ public class ApiClient : IDisposable
         _authToken = null;
         try
         {
-            if (File.Exists(TokenFile))
-                File.Delete(TokenFile);
+            File.WriteAllText(_authToken,null);
+            _authToken = null ;
         }
         catch (Exception ex)
         {
@@ -158,7 +165,7 @@ public class ApiClient : IDisposable
     public async Task<string> GetAccountDataAsync()
     {
         if (string.IsNullOrEmpty(_authToken))
-            throw new UnauthorizedAccessException("Not authenticated");
+            throw new UnauthorizedAccessException("Not authenticated 1");
 
         try
         {
@@ -177,7 +184,7 @@ public class ApiClient : IDisposable
     public async Task<string> GetBooksAsync()
     {
         if (string.IsNullOrEmpty(_authToken))
-            throw new UnauthorizedAccessException("Not authenticated");
+            throw new UnauthorizedAccessException("Not authenticated 2");
 
         try
         {
@@ -196,6 +203,7 @@ public class ApiClient : IDisposable
     public void Logout()
     {
         ClearToken();
+        File.Delete(TokenFile);
     }
     #endregion
 
