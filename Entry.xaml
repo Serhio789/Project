@@ -6,11 +6,11 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WPFBookStore"
       mc:Ignorable="d" Name="Start_"
-      Height="450" Width="800" MinHeight="650" MinWidth="1000"
+      Height="650" Width="1000" MinHeight="560" MinWidth="935"
       Title="Entry"
       WindowStartupLocation="CenterScreen" WindowStyle="None"
       Background="Transparent" AllowsTransparency="True"
-      ResizeMode="NoResize" FontFamily="Poppins">
+      ResizeMode="CanResizeWithGrip" FontFamily="Poppins">
 
     <Border Background="{DynamicResource PrimaryBackgroundColor}">
         <Grid>

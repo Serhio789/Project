@@ -6,22 +6,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFBookStore"
         mc:Ignorable="d" Name="home"
-        Title="MainWindow" Height="650" Width="1000"
+        Title="MainWindow" Height="650" Width="1000" MinHeight="560" MinWidth="935"
         WindowStartupLocation="CenterScreen" WindowStyle="None"
         Background="Transparent" AllowsTransparency="True"
-        ResizeMode="NoResize" FontFamily="Inter">
+        ResizeMode="CanResizeWithGrip" FontFamily="Inter">
 
-    <Border Background="{DynamicResource PrimaryBackgroundColor}"
-            CornerRadius="0">
+    <Border Background="{DynamicResource PrimaryBackgroundColor}" CornerRadius="0">
+        <Border.Style>
+            <Style TargetType="Border">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding WindowState, ElementName=home}" Value="Normal">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding WindowState, ElementName=home}" Value="Maximized">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Border.Style>
+
         <Grid x:Name="mainContent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0"
-                    Background="{DynamicResource SecundaryBackgroundColor}"
-                    CornerRadius="0 0 0 8">
+            <Border Grid.Column="0" Background="{DynamicResource SecundaryBackgroundColor}">
                 <Grid x:Name="GridNav" Width="60">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"/>
@@ -45,9 +55,9 @@
                                HorizontalAlignment="Left"
                                Margin="60 0 0 0" FontFamily ="Inter"/>
                     </Grid>
-                    
 
-                        <!-- Start: MenuItem -->
+
+                    <!-- Start: MenuItem -->
                     <StackPanel Grid.Row="1" Margin="-1 40 0 20">
                         <Button x:Name="btnHome" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnHome_MouseEnter" MouseLeave="btnHome_MouseLeave" Click="btnHome_Click">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource home}" IconWidth="16" Text="Главная" VerticalAlignment="Center" FontFamily ="Inter"/>
@@ -68,12 +78,12 @@
                     <!-- End: Popup User Control -->
                 </Grid>
             </Border>
-            <Border Background="{DynamicResource SecundaryBackgroundColor}" Grid.Column="1" Margin="0,0,0,560"/>
+            <Border Background="{DynamicResource SecundaryBackgroundColor}" Grid.Column="1" Height="60" VerticalAlignment="Top"/>
 
 
-            <Grid Grid.Column="1" Margin="0,0,0,0">
+            <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
@@ -99,7 +109,7 @@
                 </ToggleButton>
 
                 <!-- Start: Button Close | Restore | Minimize -->
-                <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft" Grid.RowSpan="2">
+                <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft">
                     <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton" BorderBrush="White" Foreground="Black" Width="25"/>
                     <Button x:Name="btnRestore" Margin="5,0" Click="btnRestore_Click">
                         <Button.Style>
@@ -118,16 +128,18 @@
                 <!-- End: Button Close | Restore | Minimize -->
 
                 <Frame Grid.Row="1"
-                       Name="fContainer" 
-                       VerticalAlignment="Top"
-                       Margin="0,90,5,0"
-                       NavigationUIVisibility="Hidden" Navigated="fContainer_Navigated">
+                        Name="fContainer" 
+                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Stretch"
+                        Margin="0,0,5,0"
+                        NavigationUIVisibility="Hidden" 
+                        Navigated="fContainer_Navigated">
                 </Frame>
-                <Button x:Name="btnExit" Content="Выход" 
-                        HorizontalAlignment="Center" 
-                        Height="40" Margin="20,580,710.2,0" 
-                        VerticalAlignment="Top" Width="150" Click="Exit_Click" 
-                        Grid.Row="1" FontFamily ="Inter" 
+                <Button x:Name="btnExit" Content="Выход" Grid.Row="1"
+                        HorizontalAlignment="Left" VerticalAlignment="Bottom" 
+                        Margin="20,0,0,20" Width="160" Height="45"
+                        Click="Exit_Click" 
+                        FontFamily ="Inter" 
                         Background="{DynamicResource SecundaryBackgroundColor}" 
                         Foreground="{DynamicResource PrimaryBackgroundColor}"/>
             </Grid>

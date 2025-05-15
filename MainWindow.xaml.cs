@@ -138,7 +138,7 @@ namespace WPFBookStore
 
         private void btnRestore_Click(object sender, RoutedEventArgs e)
         {
-            WindowState = WindowState == WindowState.Normal ? WindowState.Maximized : WindowState.Normal;
+            home.WindowState = home.WindowState == WindowState.Normal? WindowState.Maximized: WindowState.Normal;
         }
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
@@ -206,5 +206,24 @@ namespace WPFBookStore
         private void fContainer_Navigated(object sender, NavigationEventArgs e)
         {
         }
+
+        #region Отступы и максимизация
+        protected override void OnStateChanged(EventArgs e)
+        {
+            base.OnStateChanged(e);
+
+            if (WindowState == WindowState.Maximized)
+            {
+                // Обновление элементов при максимизации
+                mainContent.Margin = new Thickness(0);
+            }
+            else
+            {
+                // Возвращение отступов в нормальное состояние
+                mainContent.Margin = new Thickness(0);
+            }
+        }
+        #endregion
+
     }
 }
