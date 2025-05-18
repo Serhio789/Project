@@ -204,7 +204,6 @@ C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Entry.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\MainWindow.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Dashboard.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Home.g.cs
-C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\ProfileU.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\App.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookStore_MarkupCompile.cache
@@ -251,7 +250,6 @@ C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Entry.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\MainWindow.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Dashboard.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Home.baml
-C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\ProfileU.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookStore.g.resources
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookStore.Properties.Resources.resources
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\WPFBookStore.csproj.GenerateResource.cache
@@ -322,3 +320,7 @@ C:\Users\Владимир\Desktop\Clone\Project\obj\Debug\Pages\Catalog.baml
 C:\Users\Владимир\Desktop\Clone\Project\obj\Debug\Pages\Catalog.g.cs
 C:\Users\Владимир\Desktop\Clone\Project\obj\Debug\InfoAboutTheBook.g.cs
 C:\Users\Владимир\Desktop\Clone\Project\obj\Debug\InfoAboutTheBook.baml
+C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\InfoAboutTheBook.baml
+C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Catalog.baml
+C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\InfoAboutTheBook.g.cs
+C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Catalog.g.cs

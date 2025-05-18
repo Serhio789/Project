@@ -33,6 +33,11 @@ public class ApiClient : IDisposable
                 _authToken = File.ReadAllText(TokenFile);
                 UpdateAuthorizationHeader();
             }
+            else
+            {
+                File.Create(TokenFile);
+                FileInfo fileInfo = new FileInfo(TokenFile);
+            }
         }
         catch (Exception ex)
         {
@@ -57,8 +62,8 @@ public class ApiClient : IDisposable
         _authToken = null;
         try
         {
-            if (File.Exists(TokenFile))
-                File.Delete(TokenFile);
+            File.WriteAllText(_authToken, null);
+            _authToken = null;
         }
         catch (Exception ex)
         {
