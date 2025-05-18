@@ -65,7 +65,7 @@
                         <Button x:Name="btnDashboard" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnDashboard_MouseEnter" MouseLeave="btnDashboard_MouseLeave" Click="btnDashboard_Click">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Каталог" VerticalAlignment="Center" FontFamily ="Inter"/>
                         </Button>
-                        <Button x:Name="btnProfileU" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnProfileU_MouseEnter" MouseLeave="btnProfileU_MouseLeave" Click="btnProfileU_Click">
+                        <Button x:Name="btnCatalog" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnCatalog_MouseEnter" MouseLeave="btnCatalog_MouseLeave" Click="btnCatalog_Click">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Профиль" VerticalAlignment="Center" FontFamily ="Inter"/>
                         </Button>
                     </StackPanel>
