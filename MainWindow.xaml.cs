@@ -223,6 +223,5 @@ namespace WPFBookStore
             }
         }
         #endregion
-
     }
 }

@@ -201,6 +201,7 @@ public class ApiClient : IDisposable
     public void Logout()
     {
         ClearToken();
+        File.Delete(TokenFile);
     }
     #endregion
 

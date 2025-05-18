@@ -3,9 +3,15 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      mc:Ignorable="d"
-      Title="InfoAboutTheBook"
-      d:DesignHeight="600" d:DesignWidth="800">
+       mc:Ignorable="d"
+        Title="Информация о книге"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Height="600" 
+        Width="800"
+        FontFamily="Poppins"
+        Background="Transparent"
+        AllowsTransparency="True">
 
     <Grid Background="{DynamicResource PrimaryBackgroundColor}">
         <Grid.RowDefinitions>
@@ -13,40 +19,89 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Верхняя панель -->
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
-            <Button x:Name="BackButton" Content="Назад" Click="BackButton_Click" 
-                    Padding="10 5" Margin="5" Background="{DynamicResource SecundaryBackgroundColor}"
-                    Foreground="White"/>
-            <TextBlock x:Name="TitleText" Text="{Binding Title}" FontSize="20" Margin="10" 
-                       Foreground="White" VerticalAlignment="Center"/>
+        <!-- Шапка -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="15">
+            <Button Content="Назад" Click="BackButton_Click"
+                    Background="{DynamicResource SecundaryBackgroundColor}" 
+                        Foreground="{DynamicResource PrimaryBackgroundColor}"/>
+            <TextBlock Text="{Binding Title}" 
+                       FontSize="22"
+                       Margin="15 0"
+                       Foreground="White"/>
         </StackPanel>
 
         <!-- Основной контент -->
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
-            <Grid Margin="10">
+            <Grid Margin="20">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
 
                 <!-- Обложка -->
-                <Image Grid.Column="0" Source="{Binding Cover}" 
-                       Stretch="Uniform" Margin="10" HorizontalAlignment="Center"/>
+                <Image Source="{Binding Cover}" 
+                       Stretch="Uniform"
+                       MaxHeight="400"
+                       HorizontalAlignment="Center"/>
 
-                <!-- Метаданные -->
-                <StackPanel Grid.Column="1" Margin="10">
-                    <TextBlock Text="{Binding Author.LastNameAutor}" FontSize="16" Margin="0 5" Foreground="White"/>
-                    <TextBlock Text="{Binding Year}" FontSize="16" Margin="0 5" Foreground="White"/>
-                    <TextBlock Text="{Binding Genre.Name}" FontSize="16" Margin="0 5" Foreground="White"/>
-                    <!-- Добавьте другие поля по необходимости -->
+                <!-- Информация -->
+                <StackPanel Grid.Column="1" Margin="20 0">
+                    <!-- Автор -->
+                    <TextBlock Margin="0 5" Foreground="White">
+                        <Run Text="Автор: " FontWeight="Bold"/>
+                        <Run Text="{Binding Author.LastNameAutor}"/>
+                        <Run Text="{Binding Author.FirstNameAutor}"/>
+                    </TextBlock>
+
+                    <!-- Основные данные -->
+                    <TextBlock Text="{Binding Year, StringFormat='Год издания: {0}'}"
+                               Margin="0 5" Foreground="White"/>
+
+                    <TextBlock Margin="0 5" Foreground="White">
+                        <Run Text="Жанр: " FontWeight="Bold"/>
+                        <Run Text="{Binding Genre.Name}"/>
+                    </TextBlock>
+
+                    <TextBlock Margin="0 5" Foreground="White">
+                        <Run Text="Издатель: " FontWeight="Bold"/>
+                        <Run Text="{Binding Publisher.Name, TargetNullValue='не указано'}"/>
+                    </TextBlock>
+
+                    <!-- ISBN и язык -->
+                    <TextBlock Text="{Binding ISBN, StringFormat='ISBN: {0}'}"
+                               Margin="0 5" Foreground="White"/>
+
+                    <TextBlock Text="{Binding Language, StringFormat='Язык: {0}'}"
+                               Margin="0 5" Foreground="White"/>
+
+                    <!-- Переводчики -->
+                    <!--<TextBlock Margin="0 5" Foreground="White">
+                        <Run Text="Переводчики: " FontWeight="Bold"/>
+                        <Run Text="{Binding TranslatorsString}"/>
+                    </TextBlock>-->
+
+                    <!-- Описание -->
+                    <TextBlock Text="Описание:" FontWeight="Bold"
+                               Margin="0 10 0 5" Foreground="White"/>
+                    <ScrollViewer MaxHeight="150" VerticalScrollBarVisibility="Auto">
+                        <TextBlock Text="{Binding Summary}" 
+                                   TextWrapping="Wrap"
+                                   Foreground="White"/>
+                    </ScrollViewer>
                 </StackPanel>
             </Grid>
         </ScrollViewer>
 
         <!-- Кнопка действий -->
-        <Button x:Name="ActionButton" Grid.Row="1" Content="Добавить" Click="ActionButton_Click" 
-                HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Padding="20 5"
-                Background="{DynamicResource SecundaryBackgroundColor}" Foreground="White"/>
+        <Button x:Name="ActionButton"
+                Grid.Row="1"
+                Content="Добавить"
+                Click="ActionButton_Click"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="20"
+                Padding="25 8"
+                Background="{DynamicResource SecundaryBackgroundColor}" 
+                        Foreground="{DynamicResource PrimaryBackgroundColor}"/>
     </Grid>
 </Window>
