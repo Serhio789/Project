@@ -7,14 +7,70 @@
       mc:Ignorable="d" 
       Width="935" Height="560"
       Title="Личный кабинет">
-    <Grid>
+    <Grid Background="{DynamicResource PrimaryBackgroundColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <ScrollViewer x:Name="MyScrollViewer" VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
             <StackPanel>
                 <Label Content="Мои книги" HorizontalAlignment="Center" VerticalAlignment="Top"  FontSize="22" FontFamily="Inter"/>
-                 <!--Здесь много элементов для прокрутки--> 
-                
+                 <!--Здесь много элементов для прокрутки-->
+                <ItemsControl x:Name="BooksItemsControl">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Width="340" Height="500" Margin="15" 
+                        Background="{DynamicResource SecundaryBackgroundColor}"
+                        CornerRadius="10"
+                        Cursor="Hand">
+                                <Border Width="340" Height="500" Margin="15" 
+                    Background="{DynamicResource SecundaryBackgroundColor}"
+                    CornerRadius="10"
+                    Cursor="Hand"
+                    PreviewMouseDown="BookItem_PreviewMouseDown">
+                                    <!-- Остальное содержимое Border -->
+
+                                    <StackPanel VerticalAlignment="Top">
+                                        <!-- Обложка -->
+                                        <Image Source="{Binding Cover}" 
+                               Height="400" 
+                               Margin="10"
+                               Stretch="UniformToFill"/>
+
+                                        <!-- Название с переносом -->
+                                        <TextBlock Text="{Binding Title}" 
+                                   Margin="10,5" 
+                                   FontSize="16"
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Center"
+                                   Foreground="White"/>
+
+                                        <!-- Автор -->
+                                        <TextBlock Text="{Binding Author.LastNameAutor}" 
+                                   Margin="10,0" 
+                                   FontSize="14"
+                                   HorizontalAlignment="Center"
+                                   Foreground="White"/>
+                                    </StackPanel>
+                                </Border>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
         </ScrollViewer>
+        <TextBlock x:Name="tbErrorMessage" Grid.Row="1" 
+           Text="У вас нет взятых книг"
+           Visibility="Collapsed" 
+           HorizontalAlignment="Center" 
+           VerticalAlignment="Center" 
+           FontSize="18"
+           Foreground="White"/>
     </Grid>
 </Page>

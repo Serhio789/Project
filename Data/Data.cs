@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using System.Threading;
 using WPFBookStore.Models;
+using Microsoft.Extensions.Logging.Abstractions;
 
 namespace WPFBookStore.Data
 {
@@ -20,6 +21,22 @@ namespace WPFBookStore.Data
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
             _logger.LogInformation("BookService initialized");
+        }
+
+        // Получение жанров для страницы Каталог
+        public async Task<List<ClassGenres>> GetGenresAsync()
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync("http://185.9.72.1:7778/api/v1/book/genres");
+                response.EnsureSuccessStatusCode();
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<ClassGenres>>(json);
+            }
+            catch
+            {
+                return new List<ClassGenres>();
+            }
         }
 
         public async Task<List<Book>> GetListBooksAsync(
@@ -94,6 +111,76 @@ namespace WPFBookStore.Data
                 _logger.LogError(ex, "Unexpected error occurred in GetBooksAsync");
                 throw;
             }
+        }
+
+
+        //Кусок моего канала:
+        public async Task AddBookAsync(int bookId, CancellationToken cancellationToken = default)
+        {
+            _logger.LogInformation("Adding book with ID {BookId}", bookId);
+
+            try
+            {
+                var response = await _httpClient.PostAsync(
+                    $"http://185.9.72.1:7778/api/add-book?bookId={bookId}",
+                    new StringContent(string.Empty),
+                    cancellationToken);
+
+                response.EnsureSuccessStatusCode();
+                _logger.LogInformation("Book with ID {BookId} added successfully", bookId);
+            }
+            catch (OperationCanceledException)
+            {
+                _logger.LogInformation("Add book operation was canceled");
+                throw;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error adding book with ID {BookId}", bookId);
+                throw;
+            }
+        }
+
+        public async Task<bool> IsBookAddedAsync(int bookId, CancellationToken cancellationToken = default)
+        {
+            _logger.LogDebug("Checking if book with ID {BookId} is added", bookId);
+
+            try
+            {
+                var response = await _httpClient.GetAsync(
+                    $"http://185.9.72.1:7778/api/check-book-added?bookId={bookId}",
+                    cancellationToken);
+
+                _logger.LogDebug("Book check for ID {BookId} returned status {StatusCode}",
+                    bookId, response.StatusCode);
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (OperationCanceledException)
+            {
+                _logger.LogInformation("Book check operation was canceled");
+                throw;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error checking if book with ID {BookId} is added", bookId);
+                return false;
+            }
+        }
+
+        public void Dispose()
+        {
+            _httpClient?.Dispose();
+            _logger.LogInformation("BookService disposed");
+        }
+        public BookService() : this(NullLogger<BookService>.Instance)
+        {
+        }
+
+        private void Log(string message)
+        {
+            // Простая запись в Debug-окно
+            System.Diagnostics.Debug.WriteLine($"[{DateTime.Now}] {message}");
         }
     }
 }

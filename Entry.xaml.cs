@@ -87,19 +87,18 @@ namespace WPFBookStore
         {
             if (_apiClient.GetAuthToken() != "")
             {
-                Console.WriteLine(_apiClient.GetAuthToken());
                 try
                 {
-                        SetLoadingState(true);
-                        string accountData = await _apiClient.GetAccountDataAsync();
-                        if (!string.IsNullOrEmpty(accountData))
-                        {
-                            OpenMainWindow();
-                        }
+                    SetLoadingState(true);
+                    string accountData = await _apiClient.GetAccountDataAsync();
+                    if (!string.IsNullOrEmpty(accountData))
+                    {
+                        OpenMainWindow();
+                    }
                 }
                 catch
                 {
-
+                    // Автоматический вход не удался
                 }
                 finally
                 {

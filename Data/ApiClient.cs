@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Reflection;
 using System.Threading.Tasks;
-using System.Windows.Shapes;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using WPFBookStore.Models;
 
 public class ApiClient : IDisposable
 {
@@ -22,7 +23,7 @@ public class ApiClient : IDisposable
         _httpClient.DefaultRequestHeaders.Accept.Add(
             new MediaTypeWithQualityHeaderValue("application/json"));
 
-        LoadToken();
+        LoadToken(); // Загружаем сохранённый токен при инициализации
     }
 
     #region Токен авторизации
@@ -64,8 +65,8 @@ public class ApiClient : IDisposable
         _authToken = null;
         try
         {
-            File.WriteAllText(_authToken,null);
-            _authToken = null ;
+            File.WriteAllText(_authToken, null);
+            _authToken = null;
         }
         catch (Exception ex)
         {
@@ -165,7 +166,7 @@ public class ApiClient : IDisposable
     public async Task<string> GetAccountDataAsync()
     {
         if (string.IsNullOrEmpty(_authToken))
-            throw new UnauthorizedAccessException("Not authenticated 1");
+            throw new UnauthorizedAccessException("Not authenticated");
 
         try
         {
@@ -184,7 +185,7 @@ public class ApiClient : IDisposable
     public async Task<string> GetBooksAsync()
     {
         if (string.IsNullOrEmpty(_authToken))
-            throw new UnauthorizedAccessException("Not authenticated 2");
+            throw new UnauthorizedAccessException("Not authenticated");
 
         try
         {
@@ -200,10 +201,115 @@ public class ApiClient : IDisposable
         }
     }
 
-    public void Logout()
+    public async void Logout()
     {
-        ClearToken();
-        File.Delete(TokenFile);
+        try
+        {
+            // Отправляем запрос на сервер для выхода
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("/api/v1/auth/token/logout/");
+
+                client.DefaultRequestHeaders.Authorization =
+                    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", _authToken);
+
+
+                // Отправляем POST запрос на endpoint выхода
+                var response = await client.PostAsync("/v1/auth/token/logout/", null);
+
+                if (!response.IsSuccessStatusCode)
+                    Console.WriteLine($"Ошибка при выходе: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex) 
+        {
+            Console.WriteLine($"Исключение при выходе: {ex.Message}"); 
+        }
+        finally
+        {
+            ClearToken();
+            File.Delete(TokenFile);
+        }
+    }
+    #endregion
+
+    #region Book Operations
+    public async Task<string> TakeBookAsync(int bookId)
+    {
+        if (string.IsNullOrEmpty(_authToken))
+            throw new UnauthorizedAccessException("Not authenticated");
+
+        try
+        {
+            var response = await SafeSendRequestAsync(() =>
+                _httpClient.PostAsync($"/v1/book/take/{bookId}/", null));
+
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadAsStringAsync();
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                throw new HttpRequestException($"Failed to take book: {errorContent}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error taking book: {ex.Message}");
+            throw;
+        }
+    }
+
+    public async Task<string> ReturnBookAsync(int issueId)
+    {
+        if (string.IsNullOrEmpty(_authToken))
+            throw new UnauthorizedAccessException("Not authenticated");
+
+        try
+        {
+            var response = await SafeSendRequestAsync(() =>
+                _httpClient.PutAsync($"/v1/account/return/{issueId}/", null));
+
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadAsStringAsync();
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                throw new HttpRequestException($"Failed to return book: {errorContent}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error returning book: {ex.Message}");
+            throw;
+        }
+    }
+
+    public async Task<List<MyBook>> GetMyBooksAsync()
+    {
+        if (string.IsNullOrEmpty(_authToken))
+            throw new UnauthorizedAccessException("Not authenticated");
+
+        try
+        {
+            var response = await SafeSendRequestAsync(() =>
+                _httpClient.GetAsync("/api/v1/account/mybooks/"));
+
+            response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+            var books = JsonConvert.DeserializeObject<List<MyBook>>(content);
+
+            return books ?? new List<MyBook>(); // Возвращаем пустой список, если ответ null
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error getting my books: {ex.Message}");
+            throw;
+        }
     }
     #endregion
 
