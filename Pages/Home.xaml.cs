@@ -13,7 +13,7 @@ namespace WPFBookStore.Pages
     /// </summary>
     public partial class Home : Page
     {
-        private ApiClient _client;
+        private readonly ApiClient _client;
         public Home()
         {
             InitializeComponent();
@@ -40,13 +40,6 @@ namespace WPFBookStore.Pages
             }
         }
 
-        private void MySlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            if (MyScrollViewer != null)
-            {
-                MyScrollViewer.ScrollToVerticalOffset(e.NewValue);
-            }
-        }
         private void BookItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             if (((Border)sender).DataContext is Book book)

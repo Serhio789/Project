@@ -115,31 +115,6 @@ namespace WPFBookStore.Data
 
 
         //Кусок моего канала:
-        public async Task AddBookAsync(int bookId, CancellationToken cancellationToken = default)
-        {
-            _logger.LogInformation("Adding book with ID {BookId}", bookId);
-
-            try
-            {
-                var response = await _httpClient.PostAsync(
-                    $"http://185.9.72.1:7778/api/add-book?bookId={bookId}",
-                    new StringContent(string.Empty),
-                    cancellationToken);
-
-                response.EnsureSuccessStatusCode();
-                _logger.LogInformation("Book with ID {BookId} added successfully", bookId);
-            }
-            catch (OperationCanceledException)
-            {
-                _logger.LogInformation("Add book operation was canceled");
-                throw;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error adding book with ID {BookId}", bookId);
-                throw;
-            }
-        }
 
         public async Task<bool> IsBookAddedAsync(int bookId, CancellationToken cancellationToken = default)
         {
@@ -175,12 +150,6 @@ namespace WPFBookStore.Data
         }
         public BookService() : this(NullLogger<BookService>.Instance)
         {
-        }
-
-        private void Log(string message)
-        {
-            // Простая запись в Debug-окно
-            System.Diagnostics.Debug.WriteLine($"[{DateTime.Now}] {message}");
         }
     }
 }

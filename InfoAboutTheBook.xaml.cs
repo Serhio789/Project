@@ -10,11 +10,13 @@ namespace WPFBookStore
     {
         private readonly Book _book;
         private readonly BookService _bookService;
+        private readonly ApiClient _apiClient;
 
         public InfoAboutTheBook(Book book)
         {
             InitializeComponent();
             _book = book;
+            _apiClient = new ApiClient();
             //_bookService = new BookService(null); // Упрощаем инициализацию
             _bookService = new BookService(); // Используем упрощенный конструктор
             DataContext = _book;
@@ -51,7 +53,7 @@ namespace WPFBookStore
 
             try
             {
-                await _bookService.AddBookAsync(_book.idBook);
+                await  _apiClient.TakeBookAsync(_book.idBook);
                 ActionButton.Content = "Читать";
             }
             catch (HttpRequestException ex)

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -221,9 +222,9 @@ public class ApiClient : IDisposable
                     Console.WriteLine($"Ошибка при выходе: {response.StatusCode}");
             }
         }
-        catch (Exception ex) 
+        catch (Exception ex)
         {
-            Console.WriteLine($"Исключение при выходе: {ex.Message}"); 
+            Console.WriteLine($"Исключение при выходе: {ex.Message}");
         }
         finally
         {
@@ -242,7 +243,7 @@ public class ApiClient : IDisposable
         try
         {
             var response = await SafeSendRequestAsync(() =>
-                _httpClient.PostAsync($"/v1/book/take/{bookId}/", null));
+                _httpClient.PostAsync($"/api/v1/book/take/{bookId}/", null));
 
             if (response.IsSuccessStatusCode)
             {
@@ -302,8 +303,10 @@ public class ApiClient : IDisposable
 
             var content = await response.Content.ReadAsStringAsync();
             var books = JsonConvert.DeserializeObject<List<MyBook>>(content);
-
-            return books ?? new List<MyBook>(); // Возвращаем пустой список, если ответ null
+            return books?
+            .Where(book => book.ReturnDate == null)
+            .ToList()
+            ?? new List<MyBook>();
         }
         catch (Exception ex)
         {

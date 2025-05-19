@@ -138,6 +138,7 @@
       <DependentUpon>UserPopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\ApiClient.cs" />
+    <Compile Include="Data\BookTextClient.cs" />
     <Compile Include="Data\Data.cs" />
     <Compile Include="Entry.xaml.cs">
       <DependentUpon>Entry.xaml</DependentUpon>
