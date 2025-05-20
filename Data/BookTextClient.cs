@@ -18,6 +18,11 @@ namespace WPFBookStore.Data
         private readonly string _baseUrl;
         private const string AuthTokenFile = "auth_token.dat";
 
+        // Навигация
+        private string[] _pages;
+        private int _currentPageIndex = 0;
+        private string _currentBookContent;
+
         public BookTextClient(string baseUrl)
         {
             _baseUrl = baseUrl ?? throw new ArgumentNullException(nameof(baseUrl));
@@ -154,6 +159,78 @@ namespace WPFBookStore.Data
 
             return pages.ToArray();
         }
+
+        public class BookPageNavigation
+        {
+            public string[] Pages { get; set; }
+            public int CurrentPageIndex { get; set; }
+            public string CurrentPageContent => Pages[CurrentPageIndex];
+            public int TotalPages => Pages.Length;
+        }
+
+        public async Task<BookPageNavigation> LoadBookWithNavigation(int bookId,
+            FontFamily fontFamily,
+            double fontSize,
+            double containerWidth,
+            double containerHeight)
+        {
+            string fb2Text = await GetBookTextAsync(bookId);
+            _currentBookContent = fb2Text;
+            _pages = SplitIntoPages(fb2Text, fontFamily, fontSize, containerWidth, containerHeight);
+            _currentPageIndex = 0;
+
+            return new BookPageNavigation
+            {
+                Pages = _pages,
+                CurrentPageIndex = _currentPageIndex
+            };
+        }
+
+        public BookPageNavigation GoToNextPage()
+        {
+            if (_pages == null || _pages.Length == 0)
+                throw new InvalidOperationException("Книга не загружена");
+
+            _currentPageIndex = Math.Min(_currentPageIndex + 1, _pages.Length - 1);
+
+            return new BookPageNavigation
+            {
+                Pages = _pages,
+                CurrentPageIndex = _currentPageIndex
+            };
+        }
+
+        public BookPageNavigation GoToPreviousPage()
+        {
+            if (_pages == null || _pages.Length == 0)
+                throw new InvalidOperationException("Книга не загружена");
+
+            _currentPageIndex = Math.Max(_currentPageIndex - 1, 0);
+
+            return new BookPageNavigation
+            {
+                Pages = _pages,
+                CurrentPageIndex = _currentPageIndex
+            };
+        }
+
+        public BookPageNavigation GoToPage(int pageNumber)
+        {
+            if (_pages == null || _pages.Length == 0)
+                throw new InvalidOperationException("Книга не загружена");
+
+            if (pageNumber < 1 || pageNumber > _pages.Length)
+                throw new ArgumentOutOfRangeException("Некорректный номер страницы");
+
+            _currentPageIndex = pageNumber - 1;
+
+            return new BookPageNavigation
+            {
+                Pages = _pages,
+                CurrentPageIndex = _currentPageIndex
+            };
+        }
+
         public string ConvertFb2ToPlainText(string fb2Content)
         {
             try
