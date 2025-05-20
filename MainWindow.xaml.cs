@@ -127,6 +127,14 @@ namespace WPFBookStore
         {
             NavigateToPage("Pages/Catalog.xaml");
         }
+
+        private void btnExitFromAccount_Click(object sender, RoutedEventArgs e)
+        {
+            _apiClient.Logout();
+            var loginWindow = new Entry();
+            loginWindow.Show();
+            Close();
+        }
         #endregion
 
         #region Обработчики управления окном
@@ -137,7 +145,7 @@ namespace WPFBookStore
 
         private void btnRestore_Click(object sender, RoutedEventArgs e)
         {
-            home.WindowState = home.WindowState == WindowState.Normal? WindowState.Maximized: WindowState.Normal;
+            WindowState = WindowState == WindowState.Normal? WindowState.Maximized: WindowState.Normal;
         }
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
@@ -145,13 +153,6 @@ namespace WPFBookStore
             WindowState = WindowState.Minimized;
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            _apiClient.Logout();
-            var loginWindow = new Entry();
-            loginWindow.Show();
-            Close();
-        }
         #endregion
 
         #region Обработчики всплывающих подсказок
@@ -168,6 +169,11 @@ namespace WPFBookStore
         private void btnCatalog_MouseEnter(object sender, MouseEventArgs e)
         {
             ShowPopup(btnCatalog, "Каталог");
+        }
+
+        private void btnExitFromAccount_MouseEnter(object sender, MouseEventArgs e)
+        {
+            ShowPopup(btnExitFromAccount, "Выход из аккаунта");
         }
 
         private void ShowPopup(Button target, string text)
@@ -192,6 +198,11 @@ namespace WPFBookStore
         }
 
         private void btnCatalog_MouseLeave(object sender, MouseEventArgs e)
+        {
+            HidePopup();
+        }
+
+        private void btnExitFromAccount_MouseLeave(object sender, MouseEventArgs e)
         {
             HidePopup();
         }
@@ -222,6 +233,8 @@ namespace WPFBookStore
                 mainContent.Margin = new Thickness(0);
             }
         }
+
         #endregion
+
     }
 }

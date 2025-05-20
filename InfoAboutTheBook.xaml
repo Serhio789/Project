@@ -1,9 +1,10 @@
 ﻿<Window x:Class="WPFBookStore.InfoAboutTheBook"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-       mc:Ignorable="d"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPFBookStore;assembly=WPFBookStore"
+        mc:Ignorable="d"
         Title="Информация о книге"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
@@ -12,6 +13,10 @@
         FontFamily="Poppins"
         Background="Transparent"
         AllowsTransparency="True">
+    <!--<Window.Resources>
+        <local:ArrayToStringConverter x:Key="ArrayToStringConverter"/>
+    </Window.Resources>-->
+
 
     <Grid Background="{DynamicResource PrimaryBackgroundColor}">
         <Grid.RowDefinitions>
@@ -23,7 +28,7 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="15">
             <Button Content="Назад" Click="BackButton_Click"
                     Background="{DynamicResource SecundaryBackgroundColor}" 
-                        Foreground="{DynamicResource PrimaryBackgroundColor}"/>
+                    Foreground="{DynamicResource PrimaryBackgroundColor}"/>
             <TextBlock Text="{Binding Title}" 
                        FontSize="22"
                        Margin="15 0"
@@ -49,22 +54,24 @@
                     <!-- Автор -->
                     <TextBlock Margin="0 5" Foreground="White">
                         <Run Text="Автор: " FontWeight="Bold"/>
-                        <Run Text="{Binding Author.LastNameAutor}"/>
                         <Run Text="{Binding Author.FirstNameAutor}"/>
+                        <Run Text="{Binding Author.LastNameAutor}"/>
                     </TextBlock>
 
                     <!-- Основные данные -->
                     <TextBlock Text="{Binding Year, StringFormat='Год издания: {0}'}"
                                Margin="0 5" Foreground="White"/>
 
+                    <!-- Жанр -->
                     <TextBlock Margin="0 5" Foreground="White">
-                        <Run Text="Жанр: " FontWeight="Bold"/>
-                        <Run Text="{Binding Genre.Name}"/>
+                    <Run Text="Жанр: " FontWeight="Bold"/>
+                    <Run Text="{Binding Genres, TargetNullValue='не указано'}"/>
                     </TextBlock>
 
+                    <!-- Издатель -->
                     <TextBlock Margin="0 5" Foreground="White">
-                        <Run Text="Издатель: " FontWeight="Bold"/>
-                        <Run Text="{Binding Publisher.Name, TargetNullValue='не указано'}"/>
+                    <Run Text="Издатель: " FontWeight="Bold"/>
+                    <Run Text="{Binding Publishers, TargetNullValue='не указано'}"/>
                     </TextBlock>
 
                     <!-- ISBN и язык -->
@@ -74,11 +81,11 @@
                     <TextBlock Text="{Binding Language, StringFormat='Язык: {0}'}"
                                Margin="0 5" Foreground="White"/>
 
-                    <!-- Переводчики -->
-                    <!--<TextBlock Margin="0 5" Foreground="White">
-                        <Run Text="Переводчики: " FontWeight="Bold"/>
-                        <Run Text="{Binding TranslatorsString}"/>
-                    </TextBlock>-->
+                    <!-- Переводчики (раскомментируйте и добавьте конвертер) -->
+                    <TextBlock Margin="0 5" Foreground="White">
+                    <Run Text="Переводчики: " FontWeight="Bold"/>
+                    <Run Text="{Binding Translators, StringFormat=' {0}', TargetNullValue=''}"/>
+                    </TextBlock>
 
                     <!-- Описание -->
                     <TextBlock Text="Описание:" FontWeight="Bold"
@@ -102,6 +109,7 @@
                 Margin="20"
                 Padding="25 8"
                 Background="{DynamicResource SecundaryBackgroundColor}" 
-                        Foreground="{DynamicResource PrimaryBackgroundColor}"/>
+                Foreground="{DynamicResource PrimaryBackgroundColor}"/>
     </Grid>
+    
 </Window>

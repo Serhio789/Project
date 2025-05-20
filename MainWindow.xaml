@@ -60,15 +60,18 @@
                     <!-- Start: MenuItem -->
                     <StackPanel Grid.Row="1" Margin="-1 40 0 20">
                         <Button x:Name="btnHome" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnHome_MouseEnter" MouseLeave="btnHome_MouseLeave" Click="btnHome_Click">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource home}" IconWidth="16" Text="Главная" VerticalAlignment="Center" FontFamily ="Inter"/>
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource home}" IconWidth="16" Text="Личный кабинет" VerticalAlignment="Center" FontFamily ="Inter"/>
                         </Button>
                         <Button x:Name="btnDashboard" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnDashboard_MouseEnter" MouseLeave="btnDashboard_MouseLeave" Click="btnDashboard_Click">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Каталог" VerticalAlignment="Center" FontFamily ="Inter"/>
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Читалка" VerticalAlignment="Center" FontFamily ="Inter"/>
                         </Button>
                         <Button x:Name="btnCatalog" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnCatalog_MouseEnter" MouseLeave="btnCatalog_MouseLeave" Click="btnCatalog_Click">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Профиль" VerticalAlignment="Center" FontFamily ="Inter"/>
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Каталог" VerticalAlignment="Center" FontFamily ="Inter"/>
                         </Button>
+                        <Button x:Name="btnExitFromAccount" Style="{DynamicResource PopupButtonStyle}" MouseEnter="btnExitFromAccount_MouseEnter" MouseLeave="btnExitFromAccount_MouseLeave" Click="btnExitFromAccount_Click">
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{StaticResource ExitDOOR}" IconWidth="16" Text="Выход из аккаунта" VerticalAlignment="Center" FontFamily="Inter"/></Button>
                     </StackPanel>
+                    
                     <!-- End: MenuItem -->
 
                     <!-- Start: Popup User Control -->
@@ -79,7 +82,6 @@
                 </Grid>
             </Border>
             <Border Background="{DynamicResource SecundaryBackgroundColor}" Grid.Column="1" Height="60" VerticalAlignment="Top"/>
-
 
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
@@ -135,13 +137,7 @@
                         NavigationUIVisibility="Hidden" 
                         Navigated="fContainer_Navigated">
                 </Frame>
-                <Button x:Name="btnExit" Content="Выход" Grid.Row="1"
-                        HorizontalAlignment="Left" VerticalAlignment="Bottom" 
-                        Margin="20,0,0,20" Width="160" Height="45"
-                        Click="Exit_Click" 
-                        FontFamily ="Inter" 
-                        Background="{DynamicResource SecundaryBackgroundColor}" 
-                        Foreground="{DynamicResource PrimaryBackgroundColor}"/>
+
             </Grid>
         </Grid>
     </Border>

@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using System.Threading;
 using WPFBookStore.Models;
 using Microsoft.Extensions.Logging.Abstractions;
+using System.Diagnostics;
 
 namespace WPFBookStore.Data
 {
@@ -39,7 +40,8 @@ namespace WPFBookStore.Data
             }
         }
 
-        public async Task<List<Book>> GetListBooksAsync(
+        public async Task<List<Book>> GetListBooksAsync
+            (
             string title = null,
             int? genre = null,
             int? year = null,
@@ -111,6 +113,7 @@ namespace WPFBookStore.Data
                 _logger.LogError(ex, "Unexpected error occurred in GetBooksAsync");
                 throw;
             }
+
         }
 
 
@@ -175,12 +178,6 @@ namespace WPFBookStore.Data
         }
         public BookService() : this(NullLogger<BookService>.Instance)
         {
-        }
-
-        private void Log(string message)
-        {
-            // Простая запись в Debug-окно
-            System.Diagnostics.Debug.WriteLine($"[{DateTime.Now}] {message}");
         }
     }
 }

@@ -14,14 +14,11 @@ namespace WPFBookStore
         {
             InitializeComponent();
             _book = book;
-            //_bookService = new BookService(null); // Упрощаем инициализацию
-            _bookService = new BookService(); // Используем упрощенный конструктор
+            _bookService = new BookService(); // Используем конструктор без параметров
             DataContext = _book;
             InitializeButtonState();
         }
 
-
-        // Куда добавлять я ещё не вписал так что на добавку можно пока забить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         private async void InitializeButtonState()
         {
             try
@@ -37,7 +34,7 @@ namespace WPFBookStore
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Close(); // Закрываем окно вместо навигации
+            Close();
         }
 
         private async void ActionButton_Click(object sender, RoutedEventArgs e)
@@ -71,5 +68,6 @@ namespace WPFBookStore
                                 MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
     }
 }

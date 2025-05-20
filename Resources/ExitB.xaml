@@ -1,0 +1,37 @@
+<Viewbox xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform" Name="ExitB">
+    <Canvas UseLayoutRounding="False" Width="48.0" Height="48.0">
+        <Canvas.Clip>
+            <RectangleGeometry Rect="0.0,0.0,48.0,48.0"/>
+        </Canvas.Clip>
+        <Canvas UseLayoutRounding="False">
+            <Canvas UseLayoutRounding="False">
+                <Rectangle RadiusX="0.0" RadiusY="0.0" Canvas.Left="0.0" Canvas.Top="0.0" Width="48.0" Height="48.0"/>
+            </Canvas>
+            <Canvas UseLayoutRounding="False">
+                <Path Fill="#ff000000">
+                    <Path.Data>
+                        <PathGeometry Figures="M 44 42 V 6 a 2 2 0 0 0 -2 -2 H 6 A 2 2 0 0 0 4 6 v 5 a 2 2 0 0 0 2.3 2 A 2.1 2.1 0 0 0 8 10.9 V 8 H 40 V 40 H 8 V 37 a 2 2 0 0 0 -2.3 -2 A 2.1 2.1 0 0 0 4 37.1 V 42 a 2 2 0 0 0 2 2 H 42 A 2 2 0 0 0 44 42 Z" FillRule="Nonzero"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="#ff000000">
+                    <Path.Data>
+                        <PathGeometry Figures="M 22.5 34.4 l 8.9 -9 a 1.9 1.9 0 0 0 0 -2.8 l -8.9 -9 a 2.1 2.1 0 0 0 -2.7 -0.2 a 1.9 1.9 0 0 0 -0.2 3 L 25.2 22 H 6 a 2 2 0 0 0 0 4 H 25.2 l -5.6 5.6 a 1.9 1.9 0 0 0 0.2 3 A 2.1 2.1 0 0 0 22.5 34.4 Z" FillRule="Nonzero"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Viewbox>
+
+<!-- ExitIcon.xaml -->
+<!--<DrawingImage x:Key="ExitB" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <DrawingImage.Drawing>
+        <DrawingGroup>
+            <GeometryDrawing Geometry="">
+                <GeometryDrawing.Brush>
+                    <SolidColorBrush Color="{DynamicResource IconColor}"/>
+                </GeometryDrawing.Brush>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingImage.Drawing>
+</DrawingImage>-->

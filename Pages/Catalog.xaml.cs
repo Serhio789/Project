@@ -5,6 +5,7 @@ using System.Windows.Controls;
 using WPFBookStore.Data;
 using WPFBookStore.Models;
 using System.Windows.Input;
+using System.Diagnostics;
 
 namespace WPFBookStore.Pages
 {
@@ -15,8 +16,7 @@ namespace WPFBookStore.Pages
         public Catalog()
         {
             InitializeComponent();
-            //_bookService = new BookService(new Logger<BookService>(new LoggerFactory()));
-            _bookService = new BookService(); // Упрощенная инициализация
+            _bookService = new BookService(new Logger<BookService>(new LoggerFactory()));
             Loaded += Catalog_Loaded;
         }
 
@@ -123,6 +123,10 @@ namespace WPFBookStore.Pages
         {
             if (((Border)sender).DataContext is Book book)
             {
+                Debug.WriteLine($"Открываем книгу: {book.Title}");
+                Debug.WriteLine($"Автор: {book.Author?.FirstNameAutor} {book.Author?.LastNameAutor}");
+                Debug.WriteLine($"Жанр: {book.Genres?.Name}");
+
                 // Открываем новое окно вместо навигации
                 var infoWindow = new InfoAboutTheBook(book);
                 infoWindow.Owner = Window.GetWindow(this);

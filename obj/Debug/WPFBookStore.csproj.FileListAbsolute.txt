@@ -324,3 +324,4 @@ C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\InfoAboutTheBook.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Catalog.baml
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\InfoAboutTheBook.g.cs
 C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\Pages\Catalog.g.cs
+C:\Users\Владимир\Desktop\Clone\Project\obj\Debug\Resources\ExitB.baml
