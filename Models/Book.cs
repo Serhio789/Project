@@ -5,13 +5,13 @@ namespace WPFBookStore.Models
     public class Book
     {
         [JsonProperty("id")]
-        public int idBook {  get; set; }
+        public int IdBook { get; set; }
 
         [JsonProperty("title")]
         public string Title { get; set; }
 
         [JsonProperty("author")]
-        public ClassAutor Author {  get; set; }
+        public ClassAutor Author { get; set; }
 
         [JsonProperty("year")]
         public int Year { get; set; }
@@ -35,7 +35,7 @@ namespace WPFBookStore.Models
         public string Cover { get; set; }
 
         [JsonProperty("file")]
-        public bool File {  get; set; }
+        public bool File { get; set; }
 
         [JsonProperty("translators")]
         public string[] Translators { get; set; }
@@ -46,5 +46,4 @@ namespace WPFBookStore.Models
         [JsonProperty("isbn")]
         public string ISBN { get; set; }
     }
-
 }

@@ -11,6 +11,6 @@ namespace WPFBookStore.Models
         public string FirstNameAutor { get; set; }
 
         [JsonProperty("last_name")]
-        public string LastNameAutor { get;set; }
+        public string LastNameAutor { get; set; }
     }
 }

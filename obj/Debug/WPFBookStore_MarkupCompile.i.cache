@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\
+E:\Project\Project-NewBranchForBugfix\obj\Debug\
 WPFBookStore
 none
 false
 DEBUG;TRACE
-C:\Users\Сергей\Documents\GitHub\Project\App.xaml
-11-487675815
+E:\Project\Project-NewBranchForBugfix\App.xaml
+121765079402
 
 22-2057574099
-301025267326
-Assets\Icons.xaml;Controls\MenuItem.xaml;Controls\UserPopup.xaml;Entry.xaml;InfoAboutTheBook.xaml;MainWindow.xaml;Pages\Catalog.xaml;Pages\Dashboard.xaml;Pages\Home.xaml;Styles\MainStyle.xaml;Themes\DarkTheme.xaml;
+30-1513730696
+Assets\Icons.xaml;Controls\MenuItem.xaml;Controls\UserPopup.xaml;Entry.xaml;InfoAboutTheBook.xaml;MainWindow.xaml;Pages\Catalog.xaml;Pages\Dashboard.xaml;Pages\Home.xaml;Resources\ExitB.xaml;Styles\MainStyle.xaml;Themes\DarkTheme.xaml;
 
-True
+False
 

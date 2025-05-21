@@ -16,7 +16,7 @@ namespace WPFBookStore.Data
     {
         private readonly HttpClient _httpClient;
         private readonly string _baseUrl;
-        private const string AuthTokenFile = "auth_token.dat";
+        private readonly ApiClient _apiClient;
 
         // Навигация
         private string[] _pages;
@@ -27,6 +27,7 @@ namespace WPFBookStore.Data
         {
             _baseUrl = baseUrl ?? throw new ArgumentNullException(nameof(baseUrl));
             _httpClient = new HttpClient();
+            _apiClient = new ApiClient();
         }
 
         public async Task<string> GetBookTextAsync(int bookId)
@@ -34,16 +35,13 @@ namespace WPFBookStore.Data
             try
             {
                 string url = $"{_baseUrl}/v1/book/text/{bookId}/";
-
-                // Получаем токен из файла
-                string authToken = GetTokenFromFile();
+                string authToken = _apiClient.GetAuthToken();
 
                 if (string.IsNullOrEmpty(authToken))
                 {
                     throw new InvalidOperationException("Токен авторизации не найден или пуст");
                 }
 
-                // Добавляем заголовок авторизации
                 _httpClient.DefaultRequestHeaders.Authorization =
                     new AuthenticationHeaderValue("Bearer", authToken);
 
@@ -61,36 +59,7 @@ namespace WPFBookStore.Data
             }
             finally
             {
-                // Очищаем заголовки после запроса
                 _httpClient.DefaultRequestHeaders.Remove("Authorization");
-            }
-        }
-
-        private string GetTokenFromFile()
-        {
-            try
-            {
-                // Проверяем существование файла
-                if (!File.Exists(AuthTokenFile))
-                {
-                    throw new FileNotFoundException($"Файл токена {AuthTokenFile} не найден");
-                }
-
-                // Читаем весь текст из файла
-                string token = File.ReadAllText(AuthTokenFile);
-
-                // Проверяем, что токен не пустой
-                if (string.IsNullOrWhiteSpace(token))
-                {
-                    throw new InvalidDataException($"Файл токена {AuthTokenFile} пуст или содержит неверные данные");
-                }
-
-                return token.Trim(); // Удаляем возможные пробелы и переносы строк
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при чтении токена: {ex.Message}");
-                throw;
             }
         }
 
@@ -330,7 +299,7 @@ namespace WPFBookStore.Data
             catch (Exception ex)
             {
                 MessageBox.Show($"Ошибка преобразования FB2: {ex.Message}");
-                return fb2Content; 
+                return fb2Content;
             }
         }
     }

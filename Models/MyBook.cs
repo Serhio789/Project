@@ -1,9 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WPFBookStore.Models
 {
@@ -14,18 +9,18 @@ namespace WPFBookStore.Models
 
         [JsonProperty("issue_date")]
         public string IssueDate { get; set; }
-        
+
         [JsonProperty("return_date")]
         public string ReturnDate { get; set; }
 
         [JsonProperty("book")]
-        public int Book {  get; set; }
+        public int Book { get; set; }
 
         [JsonProperty("title")]
         public string Title { get; set; }
 
         [JsonProperty("autor")]
-        public string Autor {  get; set; }
+        public string Autor { get; set; }
 
         [JsonProperty("cover")]
         public string Cover { get; set; }
@@ -34,6 +29,6 @@ namespace WPFBookStore.Models
         public int Reader { get; set; }
 
         [JsonProperty("is_web")]
-        public bool IsWeb {  get; set; }
+        public bool IsWeb { get; set; }
     }
 }

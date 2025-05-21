@@ -12,9 +12,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <Label Content="Мои книги" HorizontalAlignment="Center" VerticalAlignment="Top"  FontSize="22" FontFamily="Inter"/>
-        
+
         <!-- Список книг с вертикальной прокруткой -->
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
             <ItemsControl x:Name="BooksItemsControl">

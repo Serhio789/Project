@@ -3,104 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\users\\\u0441\u0435\u0440\u0433\u0435\u0439\\documents\\github\\project\\infoaboutthebook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:infoaboutthebook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\catalog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\catalog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\booktextclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\booktextclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\entry.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:entry.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\users\\\u0441\u0435\u0440\u0433\u0435\u0439\\documents\\github\\project\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\catalog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\catalog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\models\\mybook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:models\\mybook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\models\\classpublishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:models\\classpublishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\models\\classgenres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:models\\classgenres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\models\\classautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:models\\classautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\infoaboutthebook.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:infoaboutthebook.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\entry.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:entry.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\entry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:entry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\models\\textbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:models\\textbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\styles\\mainstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:styles\\mainstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\styles\\mainstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:styles\\mainstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\assets\\icons.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -131,6 +83,10 @@
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:themes\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Downloads\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\Pages\\Products.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -144,7 +100,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -152,207 +108,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookTextClient.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\BookTextClient.cs",
-              "RelativeDocumentMoniker": "Data\\BookTextClient.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\BookTextClient.cs",
-              "RelativeToolTip": "Data\\BookTextClient.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAywNMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T17:36:43.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:37:28.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\Book.cs",
-              "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:56:36.773Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApiClient.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\ApiClient.cs",
-              "RelativeDocumentMoniker": "Data\\ApiClient.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\ApiClient.cs",
-              "RelativeToolTip": "Data\\ApiClient.cs",
-              "ViewState": "AgIAAEgBAAAAAAAAAAAAAEgBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:44:17.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Data.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\Data.cs",
-              "RelativeDocumentMoniker": "Data\\Data.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\Data.cs",
-              "RelativeToolTip": "Data\\Data.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:43:45.782Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Entry.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml.cs",
-              "RelativeDocumentMoniker": "Entry.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml.cs",
-              "RelativeToolTip": "Entry.xaml.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAnwKAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:55:32.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:36:30.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwOMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T17:37:36.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dashboard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Dashboard.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\Dashboard.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Dashboard.xaml.cs",
-              "RelativeToolTip": "Pages\\Dashboard.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T17:36:30.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Dashboard.xaml",
-              "RelativeDocumentMoniker": "Pages\\Dashboard.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Dashboard.xaml",
-              "RelativeToolTip": "Pages\\Dashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:36:30.263Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Catalog.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Catalog.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\Catalog.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Catalog.xaml.cs",
-              "RelativeToolTip": "Pages\\Catalog.xaml.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAUwHcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:37:03.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InfoAboutTheBook.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\InfoAboutTheBook.xaml.cs",
-              "RelativeDocumentMoniker": "InfoAboutTheBook.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\InfoAboutTheBook.xaml.cs",
-              "RelativeToolTip": "InfoAboutTheBook.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwDcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:04:36.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Home.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Home.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\Home.xaml.cs",
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Home.xaml.cs",
               "RelativeToolTip": "Pages\\Home.xaml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAIA0wCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:37:29.517Z"
+              "WhenOpened": "2025-05-21T19:43:06.86Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "MainStyle.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Styles\\MainStyle.xaml",
+              "RelativeDocumentMoniker": "Styles\\MainStyle.xaml",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Styles\\MainStyle.xaml",
+              "RelativeToolTip": "Styles\\MainStyle.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-11T17:42:53.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAAANwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T17:37:36.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Home.xaml",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Home.xaml",
               "RelativeDocumentMoniker": "Pages\\Home.xaml",
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Home.xaml",
               "RelativeToolTip": "Pages\\Home.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:36:30.023Z"
+              "WhenOpened": "2025-03-11T17:36:30.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Entry.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml.cs",
+              "RelativeDocumentMoniker": "Entry.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml.cs",
+              "RelativeToolTip": "Entry.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowBMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:55:32.505Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "ClassPublishers.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\ClassPublishers.cs",
-              "RelativeDocumentMoniker": "Models\\ClassPublishers.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\ClassPublishers.cs",
-              "RelativeToolTip": "Models\\ClassPublishers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:03:01.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "InfoAboutTheBook.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\InfoAboutTheBook.xaml",
-              "RelativeDocumentMoniker": "InfoAboutTheBook.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\InfoAboutTheBook.xaml",
-              "RelativeToolTip": "InfoAboutTheBook.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-18T20:04:31.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MyBook.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\MyBook.cs",
-              "RelativeDocumentMoniker": "Models\\MyBook.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\MyBook.cs",
-              "RelativeToolTip": "Models\\MyBook.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:18:26.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
@@ -364,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 16,
               "Title": "UserPopup.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Controls\\UserPopup.xaml.cs",
               "RelativeDocumentMoniker": "Controls\\UserPopup.xaml.cs",
@@ -376,133 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TextBook.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\TextBook.cs",
-              "RelativeDocumentMoniker": "Models\\TextBook.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\TextBook.cs",
-              "RelativeToolTip": "Models\\TextBook.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:03:20.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ClassGenres.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\ClassGenres.cs",
-              "RelativeDocumentMoniker": "Models\\ClassGenres.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\ClassGenres.cs",
-              "RelativeToolTip": "Models\\ClassGenres.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:33:09.416Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ClassAutor.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\ClassAutor.cs",
-              "RelativeDocumentMoniker": "Models\\ClassAutor.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\ClassAutor.cs",
-              "RelativeToolTip": "Models\\ClassAutor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:02:03.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\packages.config",
-              "RelativeDocumentMoniker": "packages.config",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\packages.config",
-              "RelativeToolTip": "packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-03-11T17:37:50.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Catalog.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Catalog.xaml",
-              "RelativeDocumentMoniker": "Pages\\Catalog.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Catalog.xaml",
-              "RelativeToolTip": "Pages\\Catalog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-18T16:33:53.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Entry.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml",
-              "RelativeDocumentMoniker": "Entry.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml",
-              "RelativeToolTip": "Entry.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-11T11:54:06.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "DarkTheme.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Themes\\DarkTheme.xaml",
-              "RelativeDocumentMoniker": "Themes\\DarkTheme.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Themes\\DarkTheme.xaml",
-              "RelativeToolTip": "Themes\\DarkTheme.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:40:21.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Resources.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Properties\\Resources.Designer.cs",
-              "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Properties\\Resources.Designer.cs",
-              "RelativeToolTip": "Properties\\Resources.Designer.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T17:41:24.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "MainStyle.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Styles\\MainStyle.xaml",
-              "RelativeDocumentMoniker": "Styles\\MainStyle.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Styles\\MainStyle.xaml",
-              "RelativeToolTip": "Styles\\MainStyle.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:42:53.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Icons.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Assets\\Icons.xaml",
-              "RelativeDocumentMoniker": "Assets\\Icons.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Assets\\Icons.xaml",
-              "RelativeToolTip": "Assets\\Icons.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:36:30.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "MenuItem.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Controls\\MenuItem.xaml",
-              "RelativeDocumentMoniker": "Controls\\MenuItem.xaml",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Controls\\MenuItem.xaml",
-              "RelativeToolTip": "Controls\\MenuItem.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T17:40:32.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
               "Title": "MenuItem.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Controls\\MenuItem.xaml.cs",
               "RelativeDocumentMoniker": "Controls\\MenuItem.xaml.cs",
@@ -514,7 +204,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 18,
+              "Title": "MenuItem.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Controls\\MenuItem.xaml",
+              "RelativeDocumentMoniker": "Controls\\MenuItem.xaml",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Controls\\MenuItem.xaml",
+              "RelativeToolTip": "Controls\\MenuItem.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-11T17:40:32.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-11T17:37:50.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-11T17:36:30.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Data.cs",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\Data.cs",
+              "RelativeDocumentMoniker": "Data\\Data.cs",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\Data.cs",
+              "RelativeToolTip": "Data\\Data.cs",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAAACABAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:43:45.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\ApiClient.cs",
+              "RelativeDocumentMoniker": "Data\\ApiClient.cs",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\ApiClient.cs",
+              "RelativeToolTip": "Data\\ApiClient.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA9wEEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:44:17.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DarkTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Themes\\DarkTheme.xaml",
+              "RelativeDocumentMoniker": "Themes\\DarkTheme.xaml",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Themes\\DarkTheme.xaml",
+              "RelativeToolTip": "Themes\\DarkTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-11T17:40:21.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-11T17:37:28.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -526,7 +298,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 13,
+              "Title": "Icons.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Assets\\Icons.xaml",
+              "RelativeDocumentMoniker": "Assets\\Icons.xaml",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Assets\\Icons.xaml",
+              "RelativeToolTip": "Assets\\Icons.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-11T17:36:30.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Dashboard.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Dashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Dashboard.xaml.cs",
+              "RelativeToolTip": "Pages\\Dashboard.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T17:36:30.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Entry.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml",
+              "RelativeDocumentMoniker": "Entry.xaml",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Entry.xaml",
+              "RelativeToolTip": "Entry.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-11T11:54:06.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T17:41:24.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Dashboard.xaml",
+              "RelativeDocumentMoniker": "Pages\\Dashboard.xaml",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Dashboard.xaml",
+              "RelativeToolTip": "Pages\\Dashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-11T17:36:30.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Products.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Downloads\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\Pages\\Products.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\Pages\\Products.xaml.cs",
@@ -537,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 22,
               "Title": "Products.xaml",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Downloads\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\Pages\\Products.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\C-sharp-wpf-book-store-main\\C-sharp-wpf-book-store-main\\WPFBookStore\\Pages\\Products.xaml",

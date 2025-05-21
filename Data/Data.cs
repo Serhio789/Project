@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using System.Threading;
 using WPFBookStore.Models;
 using Microsoft.Extensions.Logging.Abstractions;
+using System.Diagnostics;
 
 namespace WPFBookStore.Data
 {
@@ -39,7 +40,8 @@ namespace WPFBookStore.Data
             }
         }
 
-        public async Task<List<Book>> GetListBooksAsync(
+        public async Task<List<Book>> GetListBooksAsync
+            (
             string title = null,
             int? genre = null,
             int? year = null,
@@ -111,37 +113,26 @@ namespace WPFBookStore.Data
                 _logger.LogError(ex, "Unexpected error occurred in GetBooksAsync");
                 throw;
             }
+
         }
 
-
-        //Кусок моего канала:
-
-        public async Task<bool> IsBookAddedAsync(int bookId, CancellationToken cancellationToken = default)
+        public async Task<Book> GetBookAsync(int idBook)
         {
-            _logger.LogDebug("Checking if book with ID {BookId} is added", bookId);
-
             try
             {
-                var response = await _httpClient.GetAsync(
-                    $"http://185.9.72.1:7778/api/check-book-added?bookId={bookId}",
-                    cancellationToken);
-
-                _logger.LogDebug("Book check for ID {BookId} returned status {StatusCode}",
-                    bookId, response.StatusCode);
-
-                return response.IsSuccessStatusCode;
+                var response = await _httpClient.GetAsync($"http://185.9.72.1:7778/api/v1/book/{idBook}/");
+                response.EnsureSuccessStatusCode();
+                var json = await response.Content.ReadAsStringAsync();
+                Debug.WriteLine(json);
+                return JsonConvert.DeserializeObject<Book>(json);
             }
-            catch (OperationCanceledException)
-            {
-                _logger.LogInformation("Book check operation was canceled");
-                throw;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error checking if book with ID {BookId} is added", bookId);
-                return false;
+            catch 
+            { 
+                return new Book();
             }
         }
+
+        //Кусок моего канала:
 
         public void Dispose()
         {
