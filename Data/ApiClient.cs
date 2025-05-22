@@ -8,18 +8,18 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using WPFBookStore.Data;
 using WPFBookStore.Models;
 
 public class ApiClient : IDisposable
 {
     private readonly HttpClient _httpClient;
-    private const string BaseUrl = "http://185.9.72.1:7778";
     private const string TokenFile = "auth_token.dat";
     private string _authToken;
 
     public ApiClient()
     {
-        _httpClient = new HttpClient { BaseAddress = new Uri(BaseUrl) };
+        _httpClient = new HttpClient { BaseAddress = new Uri(BaseApiURL.BaseUrl) };
         _httpClient.DefaultRequestHeaders.Accept.Clear();
         _httpClient.DefaultRequestHeaders.Accept.Add(
             new MediaTypeWithQualityHeaderValue("application/json"));
@@ -92,7 +92,7 @@ public class ApiClient : IDisposable
     {
         try
         {
-            var request = new HttpRequestMessage(HttpMethod.Head, BaseUrl);
+            var request = new HttpRequestMessage(HttpMethod.Head, BaseApiURL.BaseUrl);
             var response = await _httpClient.SendAsync(request);
             return response.IsSuccessStatusCode;
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -9,47 +10,50 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Xml;
+using WPFBookStore.Data;
 
 namespace WPFBookStore.Data
 {
+
     public class BookTextClient
     {
         private readonly HttpClient _httpClient;
-        private readonly string _baseUrl;
-        private readonly ApiClient _apiClient;
+        private const string AuthTokenFile = "auth_token.dat";
 
-        // Навигация
         private string[] _pages;
         private int _currentPageIndex = 0;
         private string _currentBookContent;
+        private string _bookText;
 
-        public BookTextClient(string baseUrl)
+        public BookTextClient()
         {
-            _baseUrl = baseUrl ?? throw new ArgumentNullException(nameof(baseUrl));
             _httpClient = new HttpClient();
-            _apiClient = new ApiClient();
         }
 
         public async Task<string> GetBookTextAsync(int bookId)
         {
             try
             {
-                string url = $"{_baseUrl}/v1/book/text/{bookId}/";
-                string authToken = _apiClient.GetAuthToken();
+                string url = $"{BaseApiURL.BaseApi}/v1/book/text/{bookId}/";
+                // Получаем токен из файла
+                string authToken = GetTokenFromFile();
 
                 if (string.IsNullOrEmpty(authToken))
                 {
                     throw new InvalidOperationException("Токен авторизации не найден или пуст");
                 }
 
+                // Добавляем заголовок авторизации
                 _httpClient.DefaultRequestHeaders.Authorization =
                     new AuthenticationHeaderValue("Bearer", authToken);
 
                 HttpResponseMessage response = await _httpClient.GetAsync(url);
 
-                if (response.IsSuccessStatusCode)
-                    return await response.Content.ReadAsStringAsync();
 
+
+                if (response.IsSuccessStatusCode)
+                    _bookText = await response.Content.ReadAsStringAsync();
+                return ConvertFb2ToPlainText(_bookText);
                 throw new HttpRequestException($"Ошибка при получении текста. Код: {response.StatusCode}");
             }
             catch (Exception ex)
@@ -59,23 +63,52 @@ namespace WPFBookStore.Data
             }
             finally
             {
+                // Очищаем заголовки после запроса
                 _httpClient.DefaultRequestHeaders.Remove("Authorization");
             }
         }
 
+        private string GetTokenFromFile()
+        {
+            try
+            {
+                // Проверяем существование файла
+                if (!File.Exists(AuthTokenFile))
+                {
+                    throw new FileNotFoundException($"Файл токена {AuthTokenFile} не найден");
+                }
+
+                // Читаем весь текст из файла
+                string token = File.ReadAllText(AuthTokenFile);
+
+                // Проверяем, что токен не пустой
+                if (string.IsNullOrWhiteSpace(token))
+                {
+                    throw new InvalidDataException($"Файл токена {AuthTokenFile} пуст или содержит неверные данные");
+                }
+
+                return token.Trim(); // Удаляем возможные пробелы и переносы строк
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при чтении токена: {ex.Message}");
+                throw;
+            }
+        }
+
         public string[] SplitIntoPages(
-            string fb2Text,
+            string plainText, // Теперь принимает обычный текст
             FontFamily fontFamily,
             double fontSize,
             double containerWidth,
             double containerHeight,
             int maxCharsPerPage = 5000)
         {
-            if (string.IsNullOrEmpty(fb2Text))
+            if (string.IsNullOrEmpty(plainText))
                 return Array.Empty<string>();
 
             var pages = new List<string>();
-            var currentPageText = new System.Text.StringBuilder();
+            var currentPageText = new StringBuilder();
             var typeface = new Typeface(
                 fontFamily,
                 FontStyles.Normal,
@@ -83,51 +116,84 @@ namespace WPFBookStore.Data
                 FontStretches.Normal
             );
 
-            int currentIndex = 0;
-            while (currentIndex < fb2Text.Length)
-            {
-                int chunkSize = Math.Min(100, fb2Text.Length - currentIndex);
-                string chunk = fb2Text.Substring(currentIndex, chunkSize);
-                currentPageText.Append(chunk);
+            // Разбиваем текст на абзацы
+            string[] paragraphs = plainText.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
 
+            foreach (var paragraph in paragraphs)
+            {
                 var formattedText = new FormattedText(
-                    currentPageText.ToString(),
+                    paragraph,
                     System.Globalization.CultureInfo.CurrentCulture,
                     FlowDirection.LeftToRight,
                     typeface,
                     fontSize,
                     Brushes.Black,
-                    new NumberSubstitution(),
+                    null,
                     1
                 );
 
-                if (formattedText.Height > containerHeight || currentPageText.Length >= maxCharsPerPage)
+                // Если абзац слишком длинный, разбиваем его
+                if (formattedText.Width > containerWidth)
                 {
-                    string currentText = currentPageText.ToString();
-                    int lastSpace = currentText.LastIndexOf(' ');
+                    string[] words = paragraph.Split(' ');
+                    var currentLine = new StringBuilder();
 
-                    if (lastSpace > 0)
+                    foreach (var word in words)
                     {
-                        pages.Add(currentText.Substring(0, lastSpace));
-                        currentPageText.Clear();
-                        currentPageText.Append(currentText.Substring(lastSpace + 1));
-                        currentIndex -= (chunkSize - (lastSpace + 1));
+                        var testLine = currentLine.Length > 0
+                            ? currentLine.ToString() + " " + word
+                            : word;
+
+                        var lineMetrics = new FormattedText(
+                            testLine,
+                            System.Globalization.CultureInfo.CurrentCulture,
+                            FlowDirection.LeftToRight,
+                            typeface,
+                            fontSize,
+                            Brushes.Black,
+                            null,
+                            1
+                        );
+
+                        if (lineMetrics.Width > containerWidth)
+                        {
+                            if (currentLine.Length > 0)
+                            {
+                                ProcessLine(currentLine.ToString(), pages, ref currentPageText,
+                                    containerHeight, maxCharsPerPage);
+                                currentLine.Clear();
+                            }
+                            currentLine.Append(word);
+                        }
+                        else
+                        {
+                            currentLine.Append(currentLine.Length > 0 ? " " + word : word);
+                        }
                     }
-                    else
+
+                    if (currentLine.Length > 0)
                     {
-                        pages.Add(currentText);
-                        currentPageText.Clear();
+                        ProcessLine(currentLine.ToString(), pages, ref currentPageText,
+                            containerHeight, maxCharsPerPage);
                     }
                 }
-
-                currentIndex += chunkSize;
+                else
+                {
+                    ProcessLine(paragraph, pages, ref currentPageText,
+                        containerHeight, maxCharsPerPage);
+                }
             }
 
             if (currentPageText.Length > 0)
+            {
                 pages.Add(currentPageText.ToString());
+            }
 
             return pages.ToArray();
         }
+
+
+
 
         public class BookPageNavigation
         {
@@ -198,6 +264,34 @@ namespace WPFBookStore.Data
                 Pages = _pages,
                 CurrentPageIndex = _currentPageIndex
             };
+        }
+
+        private void ProcessLine(string line, List<string> pages, ref StringBuilder currentPageText,
+            double containerHeight, int maxCharsPerPage)
+        {
+            var testText = new FormattedText(
+                currentPageText.Length > 0
+                    ? currentPageText.ToString() + "\n" + line
+                    : line,
+                System.Globalization.CultureInfo.CurrentCulture,
+                FlowDirection.LeftToRight,
+                new Typeface("Arial"),
+                14,
+                Brushes.Black,
+                null,
+                1
+            );
+
+            if (testText.Height > containerHeight || currentPageText.Length + line.Length > maxCharsPerPage)
+            {
+                pages.Add(currentPageText.ToString());
+                currentPageText.Clear();
+            }
+
+            if (currentPageText.Length > 0)
+                currentPageText.AppendLine();
+
+            currentPageText.Append(line);
         }
 
         public string ConvertFb2ToPlainText(string fb2Content)
@@ -302,5 +396,6 @@ namespace WPFBookStore.Data
                 return fb2Content;
             }
         }
+
     }
 }

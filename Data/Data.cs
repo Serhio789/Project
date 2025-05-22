@@ -29,7 +29,7 @@ namespace WPFBookStore.Data
         {
             try
             {
-                var response = await _httpClient.GetAsync("http://185.9.72.1:7778/api/v1/book/genres");
+                var response = await _httpClient.GetAsync($"{BaseApiURL.BaseApi}/v1/book/genres");
                 response.EnsureSuccessStatusCode();
                 var json = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<List<ClassGenres>>(json);
@@ -57,7 +57,7 @@ namespace WPFBookStore.Data
             try
             {
                 // Формируем базовый URL
-                string baseUrl = "http://185.9.72.1:7778/api/v1/book/list";
+                string baseUrl = $"{BaseApiURL.BaseApi}/v1/book/list";
 
                 // Формируем параметры запроса
                 var parameters = new List<string>();
@@ -120,7 +120,7 @@ namespace WPFBookStore.Data
         {
             try
             {
-                var response = await _httpClient.GetAsync($"http://185.9.72.1:7778/api/v1/book/{idBook}/");
+                var response = await _httpClient.GetAsync($"{BaseApiURL.BaseApi}/v1/book/{idBook}/");
                 response.EnsureSuccessStatusCode();
                 var json = await response.Content.ReadAsStringAsync();
                 Debug.WriteLine(json);
