@@ -1,0 +1,161 @@
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore.csproj.AssemblyReference.cache
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore.csproj.SuggestedBindingRedirects.cache
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Assets\Icons.baml
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Controls\MenuItem.g.cs
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Controls\UserPopup.g.cs
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\MainWindow.g.cs
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Pages\Dashboard.g.cs
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Pages\Home.g.cs
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\App.g.cs
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore_MarkupCompile.cache
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore_MarkupCompile.lref
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\bin\Debug\WPFBookStore.exe.config
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\bin\Debug\WPFBookStore.exe
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\bin\Debug\WPFBookStore.pdb
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Styles\MainStyle.baml
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Themes\DarkTheme.baml
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\App.baml
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Controls\MenuItem.baml
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Controls\UserPopup.baml
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\MainWindow.baml
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Pages\Dashboard.baml
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\Pages\Home.baml
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore.g.resources
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore.Properties.Resources.resources
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore.csproj.GenerateResource.cache
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore.csproj.CoreCompileInputs.cache
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore.exe
+F:\PROJECT\1267181\WPFModernVerticalMenu-main\WPFModernVerticalMenu-main\obj\Debug\WPFBookStore.pdb
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\bin\Debug\WPFBookStore.exe.config
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\bin\Debug\WPFBookStore.exe
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\bin\Debug\WPFBookStore.pdb
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.AssemblyReference.cache
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.SuggestedBindingRedirects.cache
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Assets\Icons.baml
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Styles\MainStyle.baml
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Themes\DarkTheme.baml
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\MenuItem.g.cs
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\UserPopup.g.cs
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\MainWindow.g.cs
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Dashboard.g.cs
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Home.g.cs
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\App.g.cs
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore_MarkupCompile.cache
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore_MarkupCompile.lref
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\App.baml
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\MenuItem.baml
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\UserPopup.baml
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\MainWindow.baml
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Dashboard.baml
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Home.baml
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.g.resources
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.Properties.Resources.resources
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.GenerateResource.cache
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.CoreCompileInputs.cache
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.exe
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.pdb
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Products.g.cs
+F:\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Products.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\bin\Debug\WPFBookStore.exe.config
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\bin\Debug\WPFBookStore.exe
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\bin\Debug\WPFBookStore.pdb
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.AssemblyReference.cache
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.SuggestedBindingRedirects.cache
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Assets\Icons.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Styles\MainStyle.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Themes\DarkTheme.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\MenuItem.g.cs
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\UserPopup.g.cs
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\MainWindow.g.cs
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Dashboard.g.cs
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Home.g.cs
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Products.g.cs
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\App.g.cs
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\GeneratedInternalTypeHelper.g.cs
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore_MarkupCompile.cache
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore_MarkupCompile.lref
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\App.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\MenuItem.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\UserPopup.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\MainWindow.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Dashboard.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Home.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Products.baml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.g.resources
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.Properties.Resources.resources
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.GenerateResource.cache
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.CoreCompileInputs.cache
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.exe
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.pdb
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\bin\Debug\Newtonsoft.Json.dll
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\bin\Debug\Newtonsoft.Json.xml
+I:\PROJECT\PROJECT\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.CopyComplete
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\bin\Debug\WPFBookStore.exe.config
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\bin\Debug\WPFBookStore.exe
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\bin\Debug\WPFBookStore.pdb
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.AssemblyReference.cache
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Assets\Icons.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Styles\MainStyle.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Themes\DarkTheme.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\MenuItem.g.cs
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\UserPopup.g.cs
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\MainWindow.g.cs
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Dashboard.g.cs
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Home.g.cs
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Products.g.cs
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\App.g.cs
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore_MarkupCompile.cache
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore_MarkupCompile.lref
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\App.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\MenuItem.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Controls\UserPopup.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\MainWindow.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Dashboard.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Home.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\Pages\Products.baml
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.g.resources
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.Properties.Resources.resources
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.GenerateResource.cache
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.CoreCompileInputs.cache
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.csproj.CopyComplete
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.exe
+C:\Users\Mainul Hasan\Desktop\1267181\1267181\WPFBookStore\WPFBookStore\obj\Debug\WPFBookStore.pdb
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\WPFBookStore.exe.config
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\WPFBookStore.exe
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\WPFBookStore.pdb
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore.csproj.AssemblyReference.cache
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Assets\Icons.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Styles\MainStyle.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Themes\DarkTheme.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Controls\MenuItem.g.cs
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Controls\UserPopup.g.cs
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\MainWindow.g.cs
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Pages\Dashboard.g.cs
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Pages\Home.g.cs
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Pages\Products.g.cs
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\App.g.cs
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore_MarkupCompile.cache
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore_MarkupCompile.lref
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\App.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Controls\MenuItem.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Controls\UserPopup.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\MainWindow.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Pages\Dashboard.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Pages\Home.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\Pages\Products.baml
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore.g.resources
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore.Properties.Resources.resources
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore.csproj.GenerateResource.cache
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore.csproj.CoreCompileInputs.cache
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookS.48037066.Up2Date
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore.exe
+C:\Users\Сергей\Downloads\C-sharp-wpf-book-store-main\C-sharp-wpf-book-store-main\WPFBookStore\obj\Debug\WPFBookStore.pdb
