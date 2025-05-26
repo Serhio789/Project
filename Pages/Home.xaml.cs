@@ -1,4 +1,6 @@
-﻿using System.Diagnostics.Metrics;
+﻿using Microsoft.Extensions.Logging;
+using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -8,17 +10,29 @@ using WPFBookStore.Models;
 
 namespace WPFBookStore.Pages
 {
-    /// <summary>
-    ///Home.xaml
-    /// </summary>
     public partial class Home : Page
     {
         private readonly ApiClient _client;
+        private readonly BookService _bookService;
         public Home()
         {
             InitializeComponent();
             _client = new ApiClient();
+            _bookService = new BookService(new Logger<BookService>(new LoggerFactory()));
+            LoadGenresAsync();
             Loaded += LoadedMyBook;
+            
+        }
+        private async Task LoadGenresAsync()
+        {
+            try
+            {
+                var genres = await _bookService.GetGenresAsync();
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка загрузки жанров");
+            }
         }
 
         private async void LoadedMyBook(object sender, RoutedEventArgs e)
@@ -40,12 +54,12 @@ namespace WPFBookStore.Pages
             }
         }
 
-        private void BookItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        private async void BookItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             if (((Border)sender).DataContext is Book book)
             {
-                // Открываем новое окно вместо навигации
-                var infoWindow = new InfoAboutTheBook(book);
+                var _book = await _bookService.GetBookAsync(book.IdBook);
+                var infoWindow = new InfoAboutTheBook(_book);
                 infoWindow.Owner = Window.GetWindow(this);
                 infoWindow.ShowDialog();
             }

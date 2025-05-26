@@ -7,6 +7,7 @@ using System.Windows.Documents;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using WPFBookStore.Pages;
 
 namespace WPFBookStore
 {
@@ -14,7 +15,7 @@ namespace WPFBookStore
     {
         private readonly Book _book;
         private readonly ApiClient _apiClient;
-        private bool chekBook = true;
+        private bool chekBook = false;
         private Task<Book> book;
 
         public InfoAboutTheBook(Book book)
@@ -59,9 +60,12 @@ namespace WPFBookStore
         {
             if (ActionButton.Content.ToString() == "Читать")
             {
-                MessageBox.Show("Режим чтения не реализован");
+                var dashboard = new Dashboard(_book);
+                dashboard.Owner = Window.GetWindow(this);
+                dashboard.ShowDialog();
                 return;
             }
+            
 
             try
             {

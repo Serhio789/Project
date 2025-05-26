@@ -123,14 +123,7 @@ namespace WPFBookStore.Pages
         {
             if (((Border)sender).DataContext is Book book)
             {
-                Debug.WriteLine($"Открываем книгу: {book.IdBook}");
-                Debug.WriteLine($"Автор: {book.Author?.FirstNameAutor} {book.Author?.LastNameAutor}");
-                Debug.WriteLine($"Жанр: {book.Genres?.Name}");
-                Debug.WriteLine($"Год: {book.Year}");
-                Debug.WriteLine($"Переводчики: {book.Translators}");
-                
                 var _book = await _bookService.GetBookAsync(book.IdBook);
-                // Открываем новое окно вместо навигации
                 var infoWindow = new InfoAboutTheBook(_book);
                 infoWindow.Owner = Window.GetWindow(this);
                 infoWindow.ShowDialog();

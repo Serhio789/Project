@@ -1,34 +1,52 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 using WPFBookStore.Data;
+using WPFBookStore.Models;
 
 namespace WPFBookStore.Pages
 {
-    public partial class Dashboard : Page
+    /// <summary>
+    /// Логика взаимодействия для Dashboard.xaml
+    /// </summary>
+    public partial class Dashboard : Window
     {
         private readonly BookTextClient _bookClient;
         private BookTextClient.BookPageNavigation _currentBook;
+        private readonly Book _book;
 
-        public static int BookId { get; set; }
-        public static string BookName { get; set; }
-
-        public Dashboard()
+        public Dashboard(Book book)
         {
             InitializeComponent();
             _bookClient = new BookTextClient();
-
+            _book = book;
             // Инициализация состояния кнопок
             PrevPageBtn.IsEnabled = false;
             NextPageBtn.IsEnabled = false;
         }
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Инициализация данных книги
+            //NameBook.Content = BookName;
+            LoadBook(); // Автозагрузка при открытии
+        }
 
-        private async void LoadBookBtn_Click(object sender, RoutedEventArgs e)
+        private async void LoadBook()
         {
             try
             {
                 _currentBook = await _bookClient.LoadBookWithNavigation(
-                    BookId,
+                    _book.IdBook,
                     ContentTextBox.FontFamily,
                     ContentTextBox.FontSize,
                     ContentScrollViewer.ActualWidth,
@@ -36,7 +54,7 @@ namespace WPFBookStore.Pages
 
                 UpdatePageDisplay();
                 UpdateNavigationButtons();
-                //NameBook.Content = BookName; // Название книги
+                NameBook.Text = _book.Title; // Название книги
             }
             catch (Exception ex)
             {
@@ -95,12 +113,9 @@ namespace WPFBookStore.Pages
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
-
-        private void Page_Loaded(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            // Инициализация данных книги
-            //NameBook.Content = BookName;
-            LoadBookBtn_Click(null, null); // Автозагрузка при открытии
+            Close();
         }
     }
 }

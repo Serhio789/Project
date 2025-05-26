@@ -118,11 +118,6 @@ namespace WPFBookStore
             NavigateToPage("Pages/Home.xaml");
         }
 
-        private void btnDashboard_Click(object sender, RoutedEventArgs e)
-        {
-            NavigateToPage("Pages/Dashboard.xaml");
-        }
-
         private void btnCatalog_Click(object sender, RoutedEventArgs e)
         {
             NavigateToPage("Pages/Catalog.xaml");
@@ -159,11 +154,6 @@ namespace WPFBookStore
         private void btnHome_MouseEnter(object sender, MouseEventArgs e)
         {
             ShowPopup(btnHome, "Личный Кабинет");
-        }
-
-        private void btnDashboard_MouseEnter(object sender, MouseEventArgs e)
-        {
-            ShowPopup(btnDashboard, "Чтение книг");
         }
 
         private void btnCatalog_MouseEnter(object sender, MouseEventArgs e)
