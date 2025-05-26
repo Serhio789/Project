@@ -16,33 +16,30 @@ namespace WPFBookStore
         private readonly Book _book;
         private readonly ApiClient _apiClient;
         private bool chekBook = false;
-        private Task<Book> book;
 
         public InfoAboutTheBook(Book book)
         {
             InitializeComponent();
             _book = book;
-            Debug.WriteLine(_book.Cover);
             DataContext = _book;
             _apiClient = new ApiClient();
             InitializeButtonState();
             InitializeTranslators(book);
         }
 
-        public InfoAboutTheBook(Task<Book> book)
-        {
-            this.book = book;
-        }
-
         private async void InitializeButtonState()
         {
             try
             {
-                List<MyBook> myBooks;
+                List<MyBook> myBooks; 
                 myBooks = await _apiClient.GetMyBooksAsync();
-                foreach (MyBook myBook in myBooks) 
-                    if (myBook.Id == _book.IdBook) 
+                foreach (MyBook myBook in myBooks)
+                {
+                    if (myBook.Title == _book.Title)
+                    {
                         chekBook = true;
+                    }
+                }
                 ActionButton.Content = chekBook ? "Читать" : "Добавить";
             }
             catch
