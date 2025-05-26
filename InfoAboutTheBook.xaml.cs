@@ -6,6 +6,7 @@ using System;
 using System.Windows.Documents;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace WPFBookStore
 {
@@ -20,6 +21,7 @@ namespace WPFBookStore
         {
             InitializeComponent();
             _book = book;
+            Debug.WriteLine(_book.Cover);
             DataContext = _book;
             _apiClient = new ApiClient();
             InitializeButtonState();
