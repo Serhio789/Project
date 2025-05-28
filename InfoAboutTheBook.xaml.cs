@@ -2,29 +2,47 @@
 using System.Net.Http;
 using WPFBookStore.Models;
 using WPFBookStore.Data;
+using System;
+using System.Windows.Documents;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Diagnostics;
+using WPFBookStore.Pages;
 
 namespace WPFBookStore
 {
     public partial class InfoAboutTheBook : Window
     {
         private readonly Book _book;
-        private readonly BookService _bookService;
+        private readonly ApiClient _apiClient;
+        private bool chekBook = false;
+        private Task<Book> book;
 
         public InfoAboutTheBook(Book book)
         {
             InitializeComponent();
             _book = book;
-            _bookService = new BookService(); // Используем конструктор без параметров
             DataContext = _book;
+            _apiClient = new ApiClient();
             InitializeButtonState();
+            InitializeTranslators(book);
+        }
+
+        public InfoAboutTheBook(Task<Book> book)
+        {
+            this.book = book;
         }
 
         private async void InitializeButtonState()
         {
             try
             {
-                bool isAdded = await _bookService.IsBookAddedAsync(_book.idBook);
-                ActionButton.Content = isAdded ? "Читать" : "Добавить";
+                List<MyBook> myBooks;
+                myBooks = await _apiClient.GetMyBooksAsync();
+                foreach (MyBook myBook in myBooks) 
+                    if (myBook.Title == _book.Title) 
+                        chekBook = true;
+                ActionButton.Content = chekBook ? "Читать" : "Добавить";
             }
             catch
             {
@@ -41,13 +59,16 @@ namespace WPFBookStore
         {
             if (ActionButton.Content.ToString() == "Читать")
             {
-                MessageBox.Show("Режим чтения не реализован");
+                var dashboard = new Dashboard(_book);
+                dashboard.Owner = Window.GetWindow(this);
+                dashboard.ShowDialog();
                 return;
             }
+            
 
             try
             {
-                await _bookService.AddBookAsync(_book.idBook);
+                await _apiClient.TakeBookAsync(_book.IdBook);
                 ActionButton.Content = "Читать";
             }
             catch (HttpRequestException ex)
@@ -68,6 +89,10 @@ namespace WPFBookStore
                                 MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
+        private void InitializeTranslators(Book book) 
+        {
+            for (int i = 0; i <= book.Translators.Length; i++)
+                TextTranslators.Text += book.Translators[i].ToString();
+        }
     }
 }

@@ -138,6 +138,8 @@
       <DependentUpon>UserPopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\ApiClient.cs" />
+    <Compile Include="Data\BaseApiURL.cs" />
+    <Compile Include="Data\BookTextClient.cs" />
     <Compile Include="Data\Data.cs" />
     <Compile Include="Entry.xaml.cs">
       <DependentUpon>Entry.xaml</DependentUpon>
@@ -179,6 +181,7 @@
     <Compile Include="Models\ClassAutor.cs" />
     <Compile Include="Models\ClassGenres.cs" />
     <Compile Include="Models\ClassPublishers.cs" />
+    <Compile Include="Models\MyBook.cs" />
     <Compile Include="Models\TextBook.cs" />
     <Compile Include="Pages\Catalog.xaml.cs">
       <DependentUpon>Catalog.xaml</DependentUpon>

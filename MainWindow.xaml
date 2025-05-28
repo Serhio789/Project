@@ -62,9 +62,6 @@
                         <Button x:Name="btnHome" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnHome_MouseEnter" MouseLeave="btnHome_MouseLeave" Click="btnHome_Click">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource home}" IconWidth="16" Text="Личный кабинет" VerticalAlignment="Center" FontFamily ="Inter"/>
                         </Button>
-                        <Button x:Name="btnDashboard" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnDashboard_MouseEnter" MouseLeave="btnDashboard_MouseLeave" Click="btnDashboard_Click">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Читалка" VerticalAlignment="Center" FontFamily ="Inter"/>
-                        </Button>
                         <Button x:Name="btnCatalog" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnCatalog_MouseEnter" MouseLeave="btnCatalog_MouseLeave" Click="btnCatalog_Click">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Каталог" VerticalAlignment="Center" FontFamily ="Inter"/>
                         </Button>
@@ -117,11 +114,6 @@
                         <Button.Style>
                             <Style TargetType="{x:Type Button}" BasedOn="{StaticResource IconButtonsStyle}">
                                 <Setter Property="Content" Value="{DynamicResource maximize}"/>
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding ElementName=home, Path=WindowState}" Value="Maximized">
-                                        <Setter Property="Content" Value="{DynamicResource restore}"/>
-                                    </DataTrigger>
-                                </Style.Triggers>
                             </Style>
                         </Button.Style>
                     </Button>

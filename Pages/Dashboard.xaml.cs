@@ -1,62 +1,121 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using WPFBookStore.Data;
+using WPFBookStore.Models;
 
 namespace WPFBookStore.Pages
 {
     /// <summary>
+    /// Логика взаимодействия для Dashboard.xaml
     /// </summary>
-    public partial class Dashboard : Page
+    public partial class Dashboard : Window
     {
-        public Dashboard()
+        private readonly BookTextClient _bookClient;
+        private BookTextClient.BookPageNavigation _currentBook;
+        private readonly Book _book;
+
+        public Dashboard(Book book)
         {
             InitializeComponent();
-            //ChangeLabelContent(); //Запуск для отображения названия книжки
-            //Show_Number_Page();     //Запуск для отображения страниц
-            //Show_Text_From_Book();  //Запуск для отображения текста книжки
+            _bookClient = new BookTextClient();
+            _book = book;
+            // Инициализация состояния кнопок
+            PrevPageBtn.IsEnabled = false;
+            NextPageBtn.IsEnabled = false;
         }
-
-        public static int id;
-        public static string bookName="";
-        public static string authorName="";
-        public static decimal price = decimal.Zero; 
-        public static int quantity = 0;
-        public static string category = "";
-        public static string image = "";
-        public static string description = "";
-
-        //Оставил много калла, это всё не используется заисключением GetItemList, для жизни Page_Loaded, можно как-то меня GetItemList.
-
-        private void GetItemList()
-        {
-            // Вывод списка книг
-        }
-
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            GetItemList();
+            // Инициализация данных книги
+            //NameBook.Content = BookName;
+            LoadBook(); // Автозагрузка при открытии
         }
 
-
-        //Название книги
-        private void ChangeLabelContent() 
+        private async void LoadBook()
         {
-            NameBook.Content = "Джордан";
+            try
+            {
+                _currentBook = await _bookClient.LoadBookWithNavigation(
+                    _book.IdBook,
+                    ContentTextBox.FontFamily,
+                    ContentTextBox.FontSize,
+                    ContentScrollViewer.ActualWidth,
+                    ContentScrollViewer.ActualHeight);
+
+                UpdatePageDisplay();
+                UpdateNavigationButtons();
+                NameBook.Text = _book.Title; // Название книги
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка загрузки книги: {ex.Message}", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
-        //Страницы
-        private void Show_Number_Page() 
+        private void UpdatePageDisplay()
         {
-            NumberPageFromBook.Content = "HELP";
+            if (_currentBook == null) return;
+
+            ContentTextBox.Text = _currentBook.CurrentPageContent;
+            PageInfoText.Text = $"Страница {_currentBook.CurrentPageIndex + 1} из {_currentBook.TotalPages}";
+            PageNumberBox.Text = (_currentBook.CurrentPageIndex + 1).ToString();
+            NumberPageFromBook.Text = $"Страница {_currentBook.CurrentPageIndex + 1}";
+
+            ContentScrollViewer.ScrollToTop();
         }
 
-        //Текст книги
-        private void Show_Text_From_Book() 
+        private void UpdateNavigationButtons()
         {
-            TextFromBook.Text = "HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP_HELP";
+            if (_currentBook == null) return;
+
+            PrevPageBtn.IsEnabled = _currentBook.CurrentPageIndex > 0;
+            NextPageBtn.IsEnabled = _currentBook.CurrentPageIndex < _currentBook.TotalPages - 1;
+        }
+
+        private void PrevPageBtn_Click(object sender, RoutedEventArgs e) => NavigatePage(-1);
+        private void NextPageBtn_Click(object sender, RoutedEventArgs e) => NavigatePage(1);
+
+        private void NavigatePage(int direction)
+        {
+            if (_currentBook == null) return;
+
+            _currentBook = direction > 0
+                ? _bookClient.GoToNextPage()
+                : _bookClient.GoToPreviousPage();
+
+            UpdatePageDisplay();
+            UpdateNavigationButtons();
+        }
+
+        private void GoToPageBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentBook == null || !int.TryParse(PageNumberBox.Text, out int pageNumber)) return;
+
+            try
+            {
+                _currentBook = _bookClient.GoToPage(pageNumber - 1);
+                UpdatePageDisplay();
+                UpdateNavigationButtons();
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

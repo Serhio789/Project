@@ -119,16 +119,12 @@ namespace WPFBookStore.Pages
             }
         }
 
-        private void BookItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        private async void BookItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             if (((Border)sender).DataContext is Book book)
             {
-                Debug.WriteLine($"Открываем книгу: {book.Title}");
-                Debug.WriteLine($"Автор: {book.Author?.FirstNameAutor} {book.Author?.LastNameAutor}");
-                Debug.WriteLine($"Жанр: {book.Genres?.Name}");
-
-                // Открываем новое окно вместо навигации
-                var infoWindow = new InfoAboutTheBook(book);
+                var _book = await _bookService.GetBookAsync(book.IdBook);
+                var infoWindow = new InfoAboutTheBook(_book);
                 infoWindow.Owner = Window.GetWindow(this);
                 infoWindow.ShowDialog();
             }
