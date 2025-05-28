@@ -86,7 +86,7 @@ namespace WPFBookStore.Pages
             txtAuthor.Text = "Автор";
             txtAuthor.Foreground = System.Windows.Media.Brushes.Gray;
 
-            LoadAllBooksAsync(); // Повторная загрузка всех книг
+            //LoadAllBooksAsync(); // Повторная загрузка всех книг
         }
 
         // Вспомогательные методы

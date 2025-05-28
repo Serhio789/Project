@@ -1,13 +1,12 @@
 ﻿using System.Windows;
 using System.Net.Http;
 using WPFBookStore.Models;
-using WPFBookStore.Data;
 using System;
-using System.Windows.Documents;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Diagnostics;
-using WPFBookStore.Pages;
+using System.Windows.Data;
+using System.Globalization;
 
 namespace WPFBookStore
 {
@@ -27,6 +26,7 @@ namespace WPFBookStore
             _apiClient = new ApiClient();
             InitializeButtonState();
             InitializeTranslators(book);
+            WindowState = WindowState.Maximized;
         }
 
         public InfoAboutTheBook(Task<Book> book)
@@ -43,7 +43,7 @@ namespace WPFBookStore
                 foreach (MyBook myBook in myBooks) 
                     if (myBook.Id == _book.IdBook) 
                         chekBook = true;
-                ActionButton.Content = chekBook ? "Читать" : "Добавить";
+                ActionButton.Content = chekBook ? "Вернуть" : "Добавить";
             }
             catch
             {
@@ -58,25 +58,25 @@ namespace WPFBookStore
 
         private async void ActionButton_Click(object sender, RoutedEventArgs e)
         {
-            if (ActionButton.Content.ToString() == "Читать")
+            if (ActionButton.Content.ToString() == "Вернуть")
             {
-                var dashboard = new Dashboard(_book);
-                dashboard.Owner = Window.GetWindow(this);
-                dashboard.ShowDialog();
-                return;
+                //var dashboard = new Dashboard(_book);
+                //dashboard.Owner = Window.GetWindow(this);
+                //dashboard.ShowDialog();
+                //return;
             }
             
 
             try
             {
-                await _apiClient.TakeBookAsync(_book.IdBook);
-                ActionButton.Content = "Читать";
+                //await _apiClient.TakeBookAsync(_book.IdBook);
+                //ActionButton.Content = "Вернуть";
             }
             catch (HttpRequestException ex)
             {
                 if (ex.Message.Contains("409"))
                 {
-                    ActionButton.Content = "Читать";
+                    ActionButton.Content = "Вернуть";
                 }
                 else
                 {
@@ -94,6 +94,29 @@ namespace WPFBookStore
         {
             //for (int i = 0; i <= book.Translators.Length; i++)
             //    TextTranslators.Text += book.Translators[i].ToString();
+        }
+
+        private void ReadButton_Click(object sender, RoutedEventArgs e)
+        {
+            //Кнопка для чтения книги
+            Window Dashboard = new Window();
+            Dashboard.Show();
+        }
+    }
+
+
+
+    //Нечто Похожее на конверт-конченный
+    public class ArrayToStringConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return value is string[] array ? string.Join(", ", array) : "не указано";
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
         }
     }
 }

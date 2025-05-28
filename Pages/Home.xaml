@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WPFBookStore.Pages"
       mc:Ignorable="d" 
-      Width="935" Height="560"
+      
       Title="Личный кабинет">
     <Grid Background="{DynamicResource PrimaryBackgroundColor}" Margin="10,10,0,0">
         <Grid.RowDefinitions>
