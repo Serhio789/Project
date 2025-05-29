@@ -8,10 +8,10 @@
         Title="Информация о книге"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
-        Height="650" Width="1000" MinHeight="560" MinWidth="935"
-        FontFamily="Poppins"
+        FontFamily="Inter"
         Background="Transparent"
         AllowsTransparency="True">
+    
     <!--<Window.Resources>
         <local:ArrayToStringConverter x:Key="ArrayToStringConverter"/>
     </Window.Resources>-->
@@ -26,12 +26,14 @@
         <!-- Шапка -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="15">
             <Button Content="Назад" Click="BackButton_Click"
+                    Width="100" Height="30"
                     Background="{DynamicResource SecundaryBackgroundColor}" 
                     Foreground="{DynamicResource PrimaryBackgroundColor}"/>
             <TextBlock Text="{Binding Title}" 
                        FontSize="22"
                        Margin="15 0"
-                       Foreground="White"/>
+                       Foreground="White"
+                       FontFamily="Inter"/>
         </StackPanel>
 
         <!-- Основной контент -->
@@ -45,7 +47,6 @@
                 <!-- Обложка -->
                 <Image Source="{Binding Cover}" 
                        Stretch="Uniform"
-                       MaxHeight="400"
                        HorizontalAlignment="Center"/>
 
                 <!-- Информация -->
@@ -69,7 +70,7 @@
 
                     <TextBlock x:Name="textGenres" Text="{Binding Genres}"
                                 Margin="0 5" Foreground="White"/>
-                    
+
                     <!-- Издатель -->
                     <TextBlock Margin="0 5" Foreground="White">
                     <Run Text="Издатель: " FontWeight="Bold"/>
@@ -84,8 +85,11 @@
                                Margin="0 5" Foreground="White"/>
 
                     <!-- Переводчики (раскомментируйте и добавьте конвертер) -->
-                    <TextBlock x:Name="TextTranslators" Text="Переводчики: "
-                                Margin="0 5" Foreground="White"/>
+                    <TextBlock x:Name="TextTranslators" Margin="0 5" Foreground="White">
+                    <Run Text="Переводчики: " FontWeight="Bold"/>
+                    <!--<Run Text="{Binding Translators, Converter={StaticResource ArrayToStringConverter}, TargetNullValue='не указано'}"/>-->
+                    </TextBlock>
+                    
 
                     <!-- Описание -->
                     <TextBlock Text="Описание:" FontWeight="Bold"
@@ -95,21 +99,41 @@
                                    TextWrapping="Wrap"
                                    Foreground="White"/>
                     </ScrollViewer>
+                    
+                    <!-- IS WEB? -->
+                    <TextBlock Margin="0 5" Foreground="White">
+                        <Run Text="IsWeb: " FontWeight="Bold"/>
+                        <Run Text="{Binding IsWeb}"/>
+                    </TextBlock>
                 </StackPanel>
             </Grid>
         </ScrollViewer>
 
-        <!-- Кнопка действий -->
-        <Button x:Name="ActionButton"
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20">
+            <Button x:Name="ActionButton"
                 Grid.Row="1"
                 Content="Добавить"
                 Click="ActionButton_Click"
                 HorizontalAlignment="Right"
                 VerticalAlignment="Bottom"
-                Margin="20"
-                Padding="25 8"
+                Margin="10"
                 Background="{DynamicResource SecundaryBackgroundColor}" 
-                Foreground="{DynamicResource PrimaryBackgroundColor}"/>
+                Foreground="{DynamicResource PrimaryBackgroundColor}"
+                Width="100" Height="30"
+                FontFamily="Inter"/>
+
+            <Button x:Name="ReadBtn"
+                Grid.Row="1"
+                Content="Читать"
+                Click="ReadButton_Click"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="10"
+                Background="{DynamicResource SecundaryBackgroundColor}" 
+                Foreground="{DynamicResource PrimaryBackgroundColor}"
+                Width="100" Height="30"
+                FontFamily="Inter"/>
+        </StackPanel>
     </Grid>
-    
 </Window>

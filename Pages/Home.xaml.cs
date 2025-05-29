@@ -19,7 +19,7 @@ namespace WPFBookStore.Pages
             InitializeComponent();
             _client = new ApiClient();
             _bookService = new BookService(new Logger<BookService>(new LoggerFactory()));
-            LoadGenresAsync();
+            //LoadGenresAsync();
             Loaded += LoadedMyBook;
             
         }
