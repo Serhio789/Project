@@ -270,7 +270,7 @@ public class ApiClient : IDisposable
         try
         {
             var response = await SafeSendRequestAsync(() =>
-                _httpClient.PutAsync($"/v1/account/return/{issueId}/", null));
+                _httpClient.PutAsync($"/api/v1/account/return/{issueId}/", null));
 
             if (response.IsSuccessStatusCode)
             {

@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Windows.Data;
 using System.Globalization;
+using WPFBookStore.Data;
+using WPFBookStore.Pages;
 
 namespace WPFBookStore
 {
@@ -15,6 +17,7 @@ namespace WPFBookStore
         private readonly Book _book;
         private readonly ApiClient _apiClient;
         private bool chekBook = false;
+        private MyBook _myBook;
 
         public InfoAboutTheBook(Book book)
         {
@@ -22,8 +25,8 @@ namespace WPFBookStore
             _book = book;
             DataContext = _book;
             _apiClient = new ApiClient();
+            _myBook = new MyBook();
             InitializeButtonState();
-            InitializeTranslators(book);
             WindowState = WindowState.Maximized;
         }
 
@@ -31,16 +34,22 @@ namespace WPFBookStore
         {
             try
             {
-                List<MyBook> myBooks; 
-                myBooks = await _apiClient.GetMyBooksAsync();
-                foreach (MyBook myBook in myBooks)
+                if (_book.File)
                 {
-                    if (myBook.Title == _book.Title)
+                    List<MyBook> myBooks;
+                    myBooks = await _apiClient.GetMyBooksAsync();
+                    foreach (MyBook myBook in myBooks)
                     {
-                        chekBook = true;
+                        if (myBook.Title == _book.Title)
+                        {
+                            _myBook = myBook;
+                            chekBook = true;
+                        }
                     }
+                    ActionButton.Content = chekBook ? "Вернуть" : "Добавить";
                 }
-                ActionButton.Content = chekBook ? "Вернуть" : "Добавить";
+                else
+                    ActionButton.Content = "Книги нет в наличии";
             }
             catch
             {
@@ -55,65 +64,68 @@ namespace WPFBookStore
 
         private async void ActionButton_Click(object sender, RoutedEventArgs e)
         {
-            if (ActionButton.Content.ToString() == "Вернуть")
+            if (ActionButton.Content == "Вернуть")
             {
-                //var dashboard = new Dashboard(_book);
-                //dashboard.Owner = Window.GetWindow(this);
-                //dashboard.ShowDialog();
-                //return;
-            }
-            
-
-            try
-            {
-                //await _apiClient.TakeBookAsync(_book.IdBook);
-                //ActionButton.Content = "Вернуть";
-            }
-            catch (HttpRequestException ex)
-            {
-                if (ex.Message.Contains("409"))
+                try
                 {
+                    await _apiClient.ReturnBookAsync(_myBook.Id);
+                    _myBook = null;
+                    ActionButton.Content = "Добавить";
+                }
+                catch
+                {
+                    MessageBox.Show("Не удалось вернуть книгу", "Ошибка",
+                                    MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else if (ActionButton.Content == "Добавить")
+            {
+                try
+                {
+                    await _apiClient.TakeBookAsync(_book.IdBook);
+                    List<MyBook> myBooks;
+                    myBooks = await _apiClient.GetMyBooksAsync();
+                    foreach (MyBook myBook in myBooks)
+                    {
+                        if (myBook.Title == _book.Title)
+                        {
+                            _myBook = myBook;
+                        }
+                    }
                     ActionButton.Content = "Вернуть";
                 }
-                else
+                catch (HttpRequestException ex)
+                {
+                    if (ex.Message.Contains("409"))
+                    {
+                        ActionButton.Content = "Вернуть";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Не удалось добавить книгу", "Ошибка",
+                                      MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+                catch
                 {
                     MessageBox.Show("Не удалось добавить книгу", "Ошибка",
-                                  MessageBoxButton.OK, MessageBoxImage.Error);
+                                    MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch
-            {
-                MessageBox.Show("Не удалось добавить книгу", "Ошибка",
-                                MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-        private void InitializeTranslators(Book book) 
-        {
-            //for (int i = 0; i <= book.Translators.Length; i++)
-            //    TextTranslators.Text += book.Translators[i].ToString();
         }
 
         private void ReadButton_Click(object sender, RoutedEventArgs e)
         {
             //Кнопка для чтения книги
-            Window Dashboard = new Window();
-            Dashboard.Show();
-        }
-    }
-
-
-
-    //Нечто Похожее на конверт-конченный
-    public class ArrayToStringConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return value is string[] array ? string.Join(", ", array) : "не указано";
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
+            if (_myBook != null)
+            {
+                var dashboard = new Dashboard(_book);
+                dashboard.Owner = Window.GetWindow(this);
+                dashboard.ShowDialog();
+                return;
+            }
+            else
+                MessageBox.Show("Перед прочтением книги нужно ее взять!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 }

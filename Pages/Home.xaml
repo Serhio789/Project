@@ -52,7 +52,7 @@
                                    Foreground="White"/>
 
                                     <!-- Автор -->
-                                    <TextBlock Text="{Binding Author.LastNameAutor}" 
+                                    <TextBlock Text="{Binding Autor}" 
                                    Margin="10,0" 
                                    FontSize="14"
                                    HorizontalAlignment="Center"

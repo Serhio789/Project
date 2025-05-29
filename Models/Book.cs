@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace WPFBookStore.Models
 {
@@ -45,5 +46,10 @@ namespace WPFBookStore.Models
 
         [JsonProperty("isbn")]
         public string ISBN { get; set; }
+        public string TextTranslators
+        {
+            get => Translators is string[] array ? string.Join(", ", array) : "не указано";
+            set { }
+        }
     }
 }

@@ -68,7 +68,7 @@
                     <Run Text="{Binding Genres, TargetNullValue='не указано'}"/>
                     </TextBlock>
 
-                    <TextBlock x:Name="textGenres" Text="{Binding Genres}"
+                    <TextBlock x:Name="textGenres" Text="{Binding Genres.Name}"
                                 Margin="0 5" Foreground="White"/>
 
                     <!-- Издатель -->
@@ -87,7 +87,7 @@
                     <!-- Переводчики (раскомментируйте и добавьте конвертер) -->
                     <TextBlock x:Name="TextTranslators" Margin="0 5" Foreground="White">
                     <Run Text="Переводчики: " FontWeight="Bold"/>
-                    <!--<Run Text="{Binding Translators, Converter={StaticResource ArrayToStringConverter}, TargetNullValue='не указано'}"/>-->
+                    <Run Text="{Binding TextTranslators, TargetNullValue='не указано'}"/>
                     </TextBlock>
                     
 
@@ -103,7 +103,7 @@
                     <!-- IS WEB? -->
                     <TextBlock Margin="0 5" Foreground="White">
                         <Run Text="IsWeb: " FontWeight="Bold"/>
-                        <Run Text="{Binding IsWeb}"/>
+                        <Run Text="{Binding File}"/>
                     </TextBlock>
                 </StackPanel>
             </Grid>

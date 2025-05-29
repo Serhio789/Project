@@ -126,8 +126,6 @@ namespace WPFBookStore
         private void btnExitFromAccount_Click(object sender, RoutedEventArgs e)
         {
             _apiClient.Logout();
-            var loginWindow = new Entry();
-            loginWindow.Show();
             Close();
         }
         #endregion

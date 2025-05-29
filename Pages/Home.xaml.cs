@@ -13,7 +13,7 @@ namespace WPFBookStore.Pages
     public partial class Home : Page
     {
         private readonly ApiClient _client;
-        private readonly BookService _bookService;
+        private BookService _bookService;
         public Home()
         {
             InitializeComponent();
@@ -56,13 +56,14 @@ namespace WPFBookStore.Pages
 
         private async void BookItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (((Border)sender).DataContext is Book book)
+            if (((Border)sender).DataContext is MyBook myBook)
             {
-                var _book = await _bookService.GetBookAsync(book.IdBook);
+                var _book = await _bookService.GetBookAsync(myBook.Book);
                 var infoWindow = new InfoAboutTheBook(_book);
                 infoWindow.Owner = Window.GetWindow(this);
                 infoWindow.ShowDialog();
             }
+            else Debug.WriteLine(10101);
         }
     }
 }
