@@ -3,7 +3,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
-using System.Windows.Media.Animation;
 using System.Windows.Navigation;
 
 namespace WPFBookStore
@@ -119,14 +118,15 @@ namespace WPFBookStore
             NavigateToPage("Pages/Home.xaml");
         }
 
-        private void btnDashboard_Click(object sender, RoutedEventArgs e)
+        private void btnCatalog_Click(object sender, RoutedEventArgs e)
         {
-            NavigateToPage("Pages/Dashboard.xaml");
+            NavigateToPage("Pages/Catalog.xaml");
         }
 
-        private void btnProfileU_Click(object sender, RoutedEventArgs e)
+        private void btnExitFromAccount_Click(object sender, RoutedEventArgs e)
         {
-            NavigateToPage("Pages/ProfileU.xaml");
+            _apiClient.Logout();
+            Close();
         }
         #endregion
 
@@ -138,7 +138,7 @@ namespace WPFBookStore
 
         private void btnRestore_Click(object sender, RoutedEventArgs e)
         {
-            WindowState = WindowState == WindowState.Normal ? WindowState.Maximized : WindowState.Normal;
+            WindowState = WindowState == WindowState.Normal? WindowState.Maximized: WindowState.Normal;
         }
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
@@ -146,13 +146,6 @@ namespace WPFBookStore
             WindowState = WindowState.Minimized;
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            _apiClient.Logout();
-            var loginWindow = new Entry();
-            loginWindow.Show();
-            Close();
-        }
         #endregion
 
         #region Обработчики всплывающих подсказок
@@ -161,14 +154,14 @@ namespace WPFBookStore
             ShowPopup(btnHome, "Личный Кабинет");
         }
 
-        private void btnDashboard_MouseEnter(object sender, MouseEventArgs e)
+        private void btnCatalog_MouseEnter(object sender, MouseEventArgs e)
         {
-            ShowPopup(btnDashboard, "Чтение книг");
+            ShowPopup(btnCatalog, "Каталог");
         }
 
-        private void btnProfileU_MouseEnter(object sender, MouseEventArgs e)
+        private void btnExitFromAccount_MouseEnter(object sender, MouseEventArgs e)
         {
-            ShowPopup(btnProfileU, "Каталог");
+            ShowPopup(btnExitFromAccount, "Выход из аккаунта");
         }
 
         private void ShowPopup(Button target, string text)
@@ -192,7 +185,12 @@ namespace WPFBookStore
             HidePopup();
         }
 
-        private void btnProfileU_MouseLeave(object sender, MouseEventArgs e)
+        private void btnCatalog_MouseLeave(object sender, MouseEventArgs e)
+        {
+            HidePopup();
+        }
+
+        private void btnExitFromAccount_MouseLeave(object sender, MouseEventArgs e)
         {
             HidePopup();
         }
@@ -206,5 +204,25 @@ namespace WPFBookStore
         private void fContainer_Navigated(object sender, NavigationEventArgs e)
         {
         }
+
+        #region Отступы и максимизация
+        protected override void OnStateChanged(EventArgs e)
+        {
+            base.OnStateChanged(e);
+
+            if (WindowState == WindowState.Maximized)
+            {
+                // Обновление элементов при максимизации
+                mainContent.Margin = new Thickness(0);
+            }
+            else
+            {
+                // Возвращение отступов в нормальное состояние
+                mainContent.Margin = new Thickness(0);
+            }
+        }
+
+        #endregion
+
     }
 }

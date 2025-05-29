@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using System.Threading;
 using WPFBookStore.Models;
+using Microsoft.Extensions.Logging.Abstractions;
+using System.Diagnostics;
 
 namespace WPFBookStore.Data
 {
@@ -22,7 +24,24 @@ namespace WPFBookStore.Data
             _logger.LogInformation("BookService initialized");
         }
 
-        public async Task<List<Book>> GetListBooksAsync(
+        // Получение жанров для страницы Каталог
+        public async Task<List<ClassGenres>> GetGenresAsync()
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"{BaseApiURL.BaseApi}/v1/book/genres");
+                response.EnsureSuccessStatusCode();
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<ClassGenres>>(json);
+            }
+            catch
+            {
+                return new List<ClassGenres>();
+            }
+        }
+
+        public async Task<List<Book>> GetListBooksAsync
+            (
             string title = null,
             int? genre = null,
             int? year = null,
@@ -38,7 +57,7 @@ namespace WPFBookStore.Data
             try
             {
                 // Формируем базовый URL
-                string baseUrl = "http://185.9.72.1:7778/api/v1/book/list";
+                string baseUrl = $"{BaseApiURL.BaseApi}/v1/book/list";
 
                 // Формируем параметры запроса
                 var parameters = new List<string>();
@@ -94,6 +113,34 @@ namespace WPFBookStore.Data
                 _logger.LogError(ex, "Unexpected error occurred in GetBooksAsync");
                 throw;
             }
+
+        }
+
+        public async Task<Book> GetBookAsync(int idBook)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"{BaseApiURL.BaseApi}/v1/book/{idBook}/");
+                response.EnsureSuccessStatusCode();
+                var json = await response.Content.ReadAsStringAsync();
+                Debug.WriteLine(json);
+                return JsonConvert.DeserializeObject<Book>(json);
+            }
+            catch 
+            { 
+                return new Book();
+            }
+        }
+
+        //Кусок моего канала:
+
+        public void Dispose()
+        {
+            _httpClient?.Dispose();
+            _logger.LogInformation("BookService disposed");
+        }
+        public BookService() : this(NullLogger<BookService>.Instance)
+        {
         }
     }
 }

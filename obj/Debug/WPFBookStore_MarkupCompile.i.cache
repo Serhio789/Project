@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Сергей\Documents\GitHub\Project\App.xaml
-10672776017
+121765079402
 
-19113988435
+231232041299
 301025267326
-Assets\Icons.xaml;Controls\MenuItem.xaml;Controls\UserPopup.xaml;Entry.xaml;MainWindow.xaml;Pages\Dashboard.xaml;Pages\Home.xaml;Pages\ProfileU.xaml;Styles\MainStyle.xaml;Themes\DarkTheme.xaml;
+Assets\Icons.xaml;Controls\MenuItem.xaml;Controls\UserPopup.xaml;Entry.xaml;InfoAboutTheBook.xaml;MainWindow.xaml;Pages\Catalog.xaml;Pages\Dashboard.xaml;Pages\Home.xaml;Resources\ExitB.xaml;Styles\MainStyle.xaml;Themes\DarkTheme.xaml;
 
-True
+False
 
