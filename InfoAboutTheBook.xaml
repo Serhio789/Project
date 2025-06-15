@@ -40,7 +40,7 @@
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
             <Grid Margin="20">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="400"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
@@ -52,40 +52,40 @@
                 <!-- Информация -->
                 <StackPanel Grid.Column="1" Margin="20 0">
                     <!-- Автор -->
-                    <TextBlock Margin="0 5" Foreground="White">
+                    <TextBlock Margin="0 5" Foreground="White" FontSize="22">
                         <Run Text="Автор: " FontWeight="Bold"/>
                         <Run Text="{Binding Author.FirstNameAutor}"/>
                         <Run Text="{Binding Author.LastNameAutor}"/>
                     </TextBlock>
 
                     <!-- Основные данные -->
-                    <TextBlock x:Name="textAutor" Text="{Binding Year, StringFormat='Год издания: {0}'}"
+                    <TextBlock x:Name="textAutor" FontSize="22" Text="{Binding Year, StringFormat='Год издания: {0}'}"
                                Margin="0 5" Foreground="White"/>
 
                     <!-- Жанр -->
-                    <TextBlock Margin="0 5" Foreground="White">
+                    <TextBlock Margin="0 5" Foreground="White" FontSize="22">
                     <Run Text="Жанр: " FontWeight="Bold"/>
                     <Run Text="{Binding Genres, TargetNullValue='не указано'}"/>
                     </TextBlock>
 
-                    <TextBlock x:Name="textGenres" Text="{Binding Genres.Name}"
+                    <TextBlock x:Name="textGenres" FontSize="22" Text="{Binding Genres.Name}"
                                 Margin="0 5" Foreground="White"/>
 
                     <!-- Издатель -->
-                    <TextBlock Margin="0 5" Foreground="White">
+                    <TextBlock Margin="0 5" Foreground="White" FontSize="22">
                     <Run Text="Издатель: " FontWeight="Bold"/>
                     <Run Text="{Binding Publishers, TargetNullValue='не указано'}"/>
                     </TextBlock>
 
                     <!-- ISBN и язык -->
-                    <TextBlock Text="{Binding ISBN, StringFormat='ISBN: {0}'}"
+                    <TextBlock Text="{Binding ISBN, StringFormat='ISBN: {0}'}" FontSize="22"
                                Margin="0 5" Foreground="White"/>
 
-                    <TextBlock Text="{Binding Language, StringFormat='Язык: {0}'}"
+                    <TextBlock Text="{Binding Language, StringFormat='Язык: {0}'}" FontSize="22"
                                Margin="0 5" Foreground="White"/>
 
                     <!-- Переводчики (раскомментируйте и добавьте конвертер) -->
-                    <TextBlock x:Name="TextTranslators" Margin="0 5" Foreground="White">
+                    <TextBlock x:Name="TextTranslators" Margin="0 5" Foreground="White" FontSize="22">
                     <Run Text="Переводчики: " FontWeight="Bold"/>
                     <Run Text="{Binding TextTranslators, TargetNullValue='не указано'}"/>
                     </TextBlock>
@@ -93,15 +93,15 @@
 
                     <!-- Описание -->
                     <TextBlock Text="Описание:" FontWeight="Bold"
-                               Margin="0 10 0 5" Foreground="White"/>
+                               Margin="0 10 0 5" Foreground="White" FontSize="22"/>
                     <ScrollViewer MaxHeight="150" VerticalScrollBarVisibility="Auto">
                         <TextBlock x:Name="TextSummary" Text="{Binding Summary}" 
                                    TextWrapping="Wrap"
-                                   Foreground="White"/>
+                                   Foreground="White" FontSize="22"/>
                     </ScrollViewer>
                     
                     <!-- IS WEB? -->
-                    <TextBlock Margin="0 5" Foreground="White">
+                    <TextBlock Margin="0 5" Foreground="White" FontSize="22">
                         <Run Text="IsWeb: " FontWeight="Bold"/>
                         <Run Text="{Binding File}"/>
                     </TextBlock>
