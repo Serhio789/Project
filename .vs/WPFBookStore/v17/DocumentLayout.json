@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\infoaboutthebook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\users\\\u0441\u0435\u0440\u0433\u0435\u0439\\documents\\github\\project\\infoaboutthebook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:infoaboutthebook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|c:\\users\\\u0441\u0435\u0440\u0433\u0435\u0439\\documents\\github\\project\\data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\booktextclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\booktextclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\baseapiurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\baseapiurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\data\\baseapiurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|solutionrelative:data\\baseapiurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3046A9B-3166-4C71-8845-A664105D1D5E}|WPFBookStore.csproj|C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\infoaboutthebook.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -147,23 +147,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TextBook.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\TextBook.cs",
-              "RelativeDocumentMoniker": "Models\\TextBook.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\TextBook.cs",
-              "RelativeToolTip": "Models\\TextBook.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T13:37:20.526Z"
             },
             {
               "$type": "Document",
@@ -173,7 +161,7 @@
               "RelativeDocumentMoniker": "InfoAboutTheBook.xaml.cs",
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\InfoAboutTheBook.xaml.cs",
               "RelativeToolTip": "InfoAboutTheBook.xaml.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAH8AAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAIwHEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T09:59:35.643Z",
               "EditorCaption": ""
@@ -191,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MyBook.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\MyBook.cs",
               "RelativeDocumentMoniker": "Models\\MyBook.cs",
@@ -214,20 +202,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ApiClient.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\ApiClient.cs",
               "RelativeDocumentMoniker": "Data\\ApiClient.cs",
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\ApiClient.cs",
               "RelativeToolTip": "Data\\ApiClient.cs",
-              "ViewState": "AgIAAAUBAAAAAAAAAAAAwA4BAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwIQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T11:44:17.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Home.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Pages\\Home.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\Home.xaml.cs",
@@ -235,8 +223,7 @@
               "RelativeToolTip": "Pages\\Home.xaml.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAtwD8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T19:43:06.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T19:43:06.86Z"
             },
             {
               "$type": "Document",
@@ -252,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Data.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\Data.cs",
               "RelativeDocumentMoniker": "Data\\Data.cs",
@@ -260,12 +247,11 @@
               "RelativeToolTip": "Data\\Data.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowB8AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:43:45.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T11:43:45.782Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -277,20 +263,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "BookTextClient.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\BookTextClient.cs",
               "RelativeDocumentMoniker": "Data\\BookTextClient.cs",
               "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\BookTextClient.cs",
               "RelativeToolTip": "Data\\BookTextClient.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T22:51:00.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "BaseApiURL.cs",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\BaseApiURL.cs",
+              "RelativeDocumentMoniker": "Data\\BaseApiURL.cs",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\BaseApiURL.cs",
+              "RelativeToolTip": "Data\\BaseApiURL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T08:03:14.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TextBook.cs",
+              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\TextBook.cs",
+              "RelativeDocumentMoniker": "Models\\TextBook.cs",
+              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\TextBook.cs",
+              "RelativeToolTip": "Models\\TextBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:37:20.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ClassGenres.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\ClassGenres.cs",
               "RelativeDocumentMoniker": "Models\\ClassGenres.cs",
@@ -302,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ClassPublishers.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\ClassPublishers.cs",
               "RelativeDocumentMoniker": "Models\\ClassPublishers.cs",
@@ -314,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
@@ -335,18 +346,6 @@
               "ViewState": "AgIAAJ8AAAAAAAAAAAAAAJ8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T11:55:32.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BaseApiURL.cs",
-              "DocumentMoniker": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\BaseApiURL.cs",
-              "RelativeDocumentMoniker": "Data\\BaseApiURL.cs",
-              "ToolTip": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\Documents\\GitHub\\Project\\Data\\BaseApiURL.cs",
-              "RelativeToolTip": "Data\\BaseApiURL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:03:14.889Z"
             },
             {
               "$type": "Document",

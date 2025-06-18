@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Владимир\Desktop\Project\obj\Debug\
+C:\Users\Сергей\Documents\GitHub\Project\obj\Debug\
 WPFBookStore
 none
 false
 DEBUG;TRACE
-C:\Users\Владимир\Desktop\Project\App.xaml
-12418227048
+C:\Users\Сергей\Documents\GitHub\Project\App.xaml
+121765079402
 
-22-1167679476
-30-411184076
+22-980837379
+301025267326
 Assets\Icons.xaml;Controls\MenuItem.xaml;Controls\UserPopup.xaml;Entry.xaml;InfoAboutTheBook.xaml;MainWindow.xaml;Pages\Catalog.xaml;Pages\Dashboard.xaml;Pages\Home.xaml;Resources\ExitB.xaml;Styles\MainStyle.xaml;Themes\DarkTheme.xaml;
 
 False

@@ -72,22 +72,19 @@ namespace WPFBookStore.Data
         {
             try
             {
-                // Проверяем существование файла
                 if (!File.Exists(AuthTokenFile))
                 {
                     throw new FileNotFoundException($"Файл токена {AuthTokenFile} не найден");
                 }
 
-                // Читаем весь текст из файла
                 string token = File.ReadAllText(AuthTokenFile);
 
-                // Проверяем, что токен не пустой
                 if (string.IsNullOrWhiteSpace(token))
                 {
                     throw new InvalidDataException($"Файл токена {AuthTokenFile} пуст или содержит неверные данные");
                 }
 
-                return token.Trim(); // Удаляем возможные пробелы и переносы строк
+                return token.Trim(); 
             }
             catch (Exception ex)
             {
@@ -97,7 +94,7 @@ namespace WPFBookStore.Data
         }
 
         public string[] SplitIntoPages(
-            string plainText, // Теперь принимает обычный текст
+            string plainText, 
             FontFamily fontFamily,
             double fontSize,
             double containerWidth,

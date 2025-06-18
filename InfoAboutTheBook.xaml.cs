@@ -1,13 +1,7 @@
 ﻿using System.Windows;
 using System.Net.Http;
 using WPFBookStore.Models;
-using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using System.Diagnostics;
-using System.Windows.Data;
-using System.Globalization;
-using WPFBookStore.Data;
 using WPFBookStore.Pages;
 
 namespace WPFBookStore
@@ -117,7 +111,7 @@ namespace WPFBookStore
         private void ReadButton_Click(object sender, RoutedEventArgs e)
         {
             //Кнопка для чтения книги
-            if (_myBook != null)
+            if (chekBook == true)
             {
                 var dashboard = new Dashboard(_book);
                 dashboard.Owner = Window.GetWindow(this);
